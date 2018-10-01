@@ -1,0 +1,873 @@
+%%
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%%
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%%
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%%
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%%
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+
+\documentclass[preprint,12pt]{elsarticle}
+%\documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass\cite{authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass\cite{final,1p,times]{elsarticle}
+%% \documentclass\cite{final,1p,times,twocolumn]{elsarticle}
+%% \documentclass\cite{final,3p,times]{elsarticle}
+%% \documentclass\cite{final,3p,times,twocolumn]{elsarticle}
+%% \documentclass\cite{final,5p,times]{elsarticle}
+%% \documentclass\cite{final,5p,times,twocolumn]{elsarticle}
+
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+ \usepackage{lineno}
+ \usepackage{color, soul}
+
+\journal{International Journal of Human-Computer Studies}
+
+\begin{document}
+\linenumbers
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead\cite{url} for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{A Sense of Ice and Fire: Exploring Thermal Feedback with Multiple Thermoelectric-cooling Elements on a Smart Ring}
+
+%% use optional labels to link authors explicitly to addresses:
+
+%\address[scm1]{School of Creative Media, City University of Hong Kong}
+\author[scm1]{Kening Zhu\corref{cor1}}
+\author[scm1]{Taizhou Chen}
+\author[scm1]{Shaoyu Cai}
+\author[nus2]{Simon Perrault}
+\author[kmd]{Roshan Lalintha Peiris}
+%\address[label1]{School of Creative Media, City University of Hong Kong}
+
+\address[scm1]{School of Creative Media, City University of Hong Kong, Hong Kong}
+\address[nus2]{Yale-NUS College, Singapore}
+\address[kmd]{Keio University Graduate School of Media Design, Keio University, Japan}
+\cortext[cor1]{Corresponding author}
+\author{Kening Zhu, Taizhou Chen, Shaoyu Cai, Simon Perrault, Roshan Lalintha Peiris}
+
+%\address{}
+
+\begin{abstract}
+%% Text of abstract
+%In this paper, we investigate the use of thermal feedback on a smart ring with multiple thermoelectric coolers (TECs). Our prototype offers an increased expressivity with spatial thermal patterns. In a pilot study, we compared three different ring settings:  4, 6, and 8 TECs. Results showed that users could reliably recognize 4 points with cold stimulation (97.2\% accuracy) and still achieve decent accuracy with hot stimulation (82.4\% accuracy). In our main experiments, we demonstrated the use of 4 in-ring TECs to achieve two categories of spatial thermal patterns by combining two neighboring or opposite elements. The results revealed 12 thermal patterns that were reliably recognized by the participants with the accuracy averaging 87.5\%, indicating their potential usage as the in-ring thermal icons. The participants also elicited different applications, including direction cueing through neighboring patterns and artifact comparison through opposite patterns. This demonstrated interest in spatial thermal patterns in smart rings not only for notifications but also for various everyday activities.
+In this paper, we investigate the use of thermal feedback on a smart ring with multiple thermoelectric coolers (TECs). Our prototype aims to offer an increased expressivity with spatial thermal patterns. In a pilot study with nine participants, we investigated the affordance of applying multiple miniature TECs in a ring-type finger device, by comparing the user perception in three different ring settings:  4, 6, and 8 TECs. Results showed that users could reliably recognize 4 points with cold stimulation (97.2\% accuracy) and still achieve decent accuracy with hot stimulation (82.4\% accuracy). In the following two main experiments, involving 24 participants in total (i.e. 12 for each experiment), we investigated the use of 4 in-ring TECs to achieve two categories of spatial thermal patterns by combining two neighboring or opposite elements. The results revealed 12 thermal patterns that were reliably recognized by the participants with the accuracy averaging 87.5\%, indicating their potential usage as the in-ring thermal icons. 
+
+The participants also suggested different applications for smart rings with multiple thermal modules, including direction cueing through neighboring patterns and artifact comparison through opposite patterns. This demonstrated interest in spatial thermal patterns in smart rings not only for notifications but also for various everyday activities.
+\end{abstract}
+
+\begin{keyword}
+smart ring \sep thermal feedback \sep spatial thermal sensitivity
+%% keywords here, in the form: keyword \sep keyword
+
+%% PACS codes here, in the form: \PACS code \sep code
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC\cite{2008} code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%% \linenumbers
+
+%% main text
+\section{Introduction}
+Smart rings can be used to convey information easily and discretely. As fingers are one of the more sensitive body locations to haptic stimuli \cite{16}, smart rings are especially desirable. Potential information that can be relayed ranges from simple notifications to more complex continuous information, such as training progress \cite{3}, or even direction information. However, smart rings are limited by their size, which makes it hard to embed multiple actuators of the same type in them, such as vibration motors. Thus, previous research done in this area \cite{12,22} has primarily focused on using a single actuator. However, such systems can only convey simple information by using single-dimensional patterns, such as temporal \cite{25}, which usually affects the expressivity of the system.
+
+Using multiple actuators allows for encoding of more complex information with spatial patterns. For example, a wristband with four or more output actuators (e.g. DC motors and vibration motors) could be used for navigation \cite{34}, or to perform more complex tasks, such as color comparison \cite{2}. However, vibrotactile feedback with multiple actuators does not seem to be a usable strategy to create spatial patterns with the form factor of smart ring, as the vibration at one location could easily vibrate the whole ring, making it hard to locate the source of vibration.
+
+Although early studies \cite{26,27,31} on thermal localization showed that radiation-based non-contact heat was error-prone in localization due to the phenomenon of spatial thermal summation, later research suggested on-skin thermal stimuli through small thermal-haptic devices could improve the spatial acuity for tactile stimulation \cite{28}. In addition, the cold stimulations were generally more perceivable than the hot ones \cite{42}. Psychological research has also shown the phenomenon of illusional and referral thermal sensation \cite{6}, which implies that the perception of a thermal receptor could be triggered/altered by the concurrent stimulation on the other peripheral/closed-by receptors. In the field of human-computer interaction (HCI), this channel has been previously used in a wide variety of contexts, such as social activities \cite{40}, emotions \cite{35,37,41} and navigation \cite{34}. Thermal feedback is usually considered more stable to perceive in a moving or noisy situation and  more private than other modalities \cite{10}. Additionally, Roumen et al. \cite{24} showed that heat sensitivity is positively impacted by physical activity, with heat being easier to perceive during walking or running activities. In addition, the results of NotiRing indicated the need for investigating thermal's potential as an in-ring notification channel with improved thermal devices that have more immediate feedback.
+
+While early psychological studies revealed the poor spatial acuity for thermal sensation on finger-tips \cite{43}, it is unknown how the results may alter with miniature on-skin TEC modules and the wearable form factor of ring. Previous research on thermal feedback for HCI has mainly focused on body locations such as the thenar eminence, face, and wrist \cite{7,9,10,19,20,23,39}. \colorbox{yellow}{Existing research showed the form factor of ring afforded eight positions of pin-point poking stimulation [XX]}. However, in the limited research on ring-based thermal feedback \cite{24},  multiple thermal actuators on the ring were not used. In this paper, we present a prototype of a smart ring with multiple miniature TEC elements and investigate the use of spatial thermal patterns. In the pilot study, we determined the maximum number of TECs that can be accurately recognized by participants. A configuration with four elements (see Fig. \ref{fig:1}) yields an accuracy of XXX\% for cold stimuli and XXX\% for hot stimuli. We then designed a set of in-ring thermal patterns (Fig. 9 \& 12) by combining two neighboring or opposite TECs, each of which can be triggered as cold, neutral, or hot. In a series of main experiments, we assessed the feasibility of accurately perceiving the combinational thermal patterns. Results revealed \colorbox{yellow}{XXX}, indicating their potential usage as in-ring thermal icons. Based on the participants' elicitations, we propose a list of applications that can elaborate these thermal patterns, such as \colorbox{yellow}{XXX}.
+
+%10 thermal patterns that were reliably distinguished by the participants, with an accuracy averaging 86.2\%
+
+\begin{figure}[tp]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.8\columnwidth]{img/fig1.pdf}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Smart ring prototype with four TEC modules around the finger.}
+  \label{fig:1}
+\end{figure}
+
+The contribution of this paper is four-fold:
+
+%Smart rings can be used to convey information easily and discretely. As fingers are one of the more sensitive body locations to haptic stimuli \cite{26}, smart rings are especially desirable. Potential information that can be relayed ranges from simple notifications to more complex continuous information, such as training progress \cite{3}, or even direction information. However, smart rings are limited by their size, which makes it hard to embed multiple actuators of the same type in them, such as vibration motors. Thus, previous research done in this area \cite{12,22} has primarily focused on using a single actuator. However, such systems can only convey simple information by using single-dimensional patterns, such as temporal \cite{23}, which usually affects the expressivity of the system.
+
+%Using multiple actuators allows for encoding of more complex information with spatial patterns. For example, a wristband with four or more output actuators (e.g. DC motors and vibration motors) could be used for navigation \cite{30}, or to perform more complex tasks, such as comparison \cite{2}. However, vibrotactile feedback with multiple actuators does not seem to be a usable strategy to create spatial patterns with the form factor of smart ring, as the vibration at one location could easily vibrate the whole ring, making it hard to locate the source of vibration.
+
+%Although early studies \cite{255} on thermal localization showed that radiation-based non-contact heat was error-prone in localization, recent research suggested on-skin thermal stimuli with TECs could produce fairly localized sensations \cite{29}. This channel has been previously used in a wide variety of contexts, such as social activities \cite{36}, emotions \cite{31,33,37} and navigation \cite{30}. Thermal feedback is usually considered easier to perceive and more private than other modalities \cite{9}. Additionally, Roumen et al. \cite{22} showed that heat sensitivity is positively impacted by physical activity, with heat being easier to perceive during walking or running activities.
+
+%Previous research on thermal feedback has mainly focused on body locations such as the thenar eminence, face, and wrist \cite{6,8,9,17,18,21,35}. Further, in the limited research on  ring-based thermal feedback \cite{22},  multiple thermal actuators on the ring were not used. In this paper, we present a prototype of a smart ring with multiple miniature TEC elements and investigate the use of spatial thermal patterns. In the pilot study, we determined the maximum number of TECs that can be accurately recognized by participants. A configuration with four elements (see Fig. \ref{fig:1}) yields an accuracy of 95.8\% for cold stimuli and 82.3\% for hot stimuli. We then designed a set of in-ring thermal patterns (Fig. 9 \& 12) by combining two neighboring or opposite TECs, each of which can be triggered as cold, neutral, or hot. In our main experiment, we assessed the feasibility of accurately perceiving the combinational thermal patterns. Results revealed 10 thermal patterns that were reliably distinguished by the participants, with an accuracy averaging 86.2\%, indicating their potential usage as in-ring thermal icons. Based on the participants' elicitations, we developed a list of applications that can elaborate these thermal patterns, such as navigation, notifications, and artifact comparison.
+
+
+
+%The contribution of this paper is three-fold:
+\begin{itemize}
+\item Working prototypes of smart rings embedded with multiple TECs, of various sizes, which can be used with the thermal patterns described in the paper.
+\item Empirical study on user perception of spatial thermal patterns on the finger using a smart ring.
+\item A set of thermal patterns that leverage the finger's natural sensitivity to temperature to allow reliable recognition of single and combinational patterns from the smart ring; 
+\item A set of user-elicited application scenarios that leverages the proposed set of in-ring thermal patterns.%and to support smart ring applications for notifications, directional cueing, artifact comparison, etc.
+\end{itemize}
+
+\section{Related Works}
+Our research is inspired by two emerging topics in HCI: thermal feedback, and multimodal haptic feedback on fingers.
+
+\subsection{Thermal Feedback in HCI}
+There have been extensive physiological \cite{1,31,33}, psychological \cite{14,27,45}, and HCI-related \cite{8,9,10,15,26,36,37,38,39,40,41} research on thermal feedback, from which various applications have been proposed.
+
+Jones and Berris \cite{14} distilled a list of useful features and design suggestions for the thermal display based on virtual reality (VR) research and psychological evidence. Wettach et al. \cite{36} designed a peltier-based thermal device attached to a mobile phone, and showed that users could differentiate three different hot temperatures with the error rate of 25\% after long-term training. Sato and Maeno \cite{26} created a 2x2 matrix of TECs to reduce the reaction time to thermal stimulation on the fingertip.
+
+Wilson et al. conducted a series of comprehensive investigations on thermal feedback in HCI, which provided important insights on design: 1) hand is a highly thermally sensitive body part \cite{10}; 2) 1$^{\circ}$C/sec rates of change were appropriate for thermal displays \cite{42}; 3) the perception of thermal feedback could be strongly affected by clothes \cite{10} and the environment \cite{8}; 4) a set of thermal icons on mobile phones (overall accuracy of perception: 83\%) can be designed based on the speed and the direction of temperature change \cite{38}; 5) there was a strong agreement among users on the application of thermal feedback in social communication and rating-related information representation \cite{40}; and 6) thermal feedback could be applied to represent emotion \cite{41} and widen the range of emotion representation along with other feedback modalities \cite{37}. Following Wilson et al.'��s insights, Tewell et al.'s research showed that thermal feedback enhanced the affective perception of text messages \cite{35} and could be used to facilitate navigation \cite{34}. More recently, thermal feedback was integrated in the head-mounted display to enhance the experience of presence in VR \cite{19,20,23}.
+
+Research showed that people preferred to associate personal emotional information with smart wearable accessories \cite{21}. Thus, the characteristics of being private, robust, and well-associated with affective feeling makes thermal feedback a good candidate for the output channel in smart wearable accessories. In the extensive HCI research available on thermal feedback, the thermal modules studied were mostly large and attached to the palm and the forearm (besides the integration with the head-mounted display). There has been little investigation on thermal feedback in the form factors of wearable accessories, especially as a finger ring, given physiological research results that show that fingers and the palm have similar high temperature sensitivity among different body parts \cite{31}.
+
+%There have been extensive physiological \cite{1,27,29}, psychological \cite{13,25,40}, and HCI-related \cite{7, 8, 9,14,24,32, 33, 34, 35, 36, 37} research on thermal feedback, from which various applications have been proposed.
+
+%Jones and Berris \cite{13} distilled a list of useful features and design suggestions for the thermal display based on virtual reality (VR) research and psychological evidence. Wettach et al. \cite{32} designed a peltier-based thermal device attached to a mobile phone, and showed that users could differentiate three different hot temperatures with the error rate of 25\% after long-term training. Sato and Maeno \cite{24} created a 2x2 matrix of TECs to reduce the reaction time to thermal stimulation on the fingertip.
+
+%Wilson et al. conducted a series of comprehensive investigations on thermal feedback in HCI, which provided important insights on design: 1) hand is a highly thermally sensitive body part \cite{9}; 2) 1 $^{\circ}$C/sec rates of change were appropriate for thermal displays \cite{38}; 3) the perception of thermal feedback could be strongly affected by clothes \cite{9} and the environment \cite{7}; 4) a set of thermal icons on mobile phones (overall accuracy of perception: 83\%) can be designed based on the speed and the direction of temperature change \cite{34}; 5) there was a strong agreement among users on the application of thermal feedback in social communication and rating-related information representation \cite{36}; and 6) thermal feedback could be applied to represent emotion \cite{37} and widen the range of emotion representation along with other feedback modalities \cite{33}. Following Wilson et al.’s insights, Tewell et al.’s research showed that thermal feedback enhanced the affective perception of text messages \cite{31} and could be used to facilitate navigation \cite{30}. More recently, thermal feedback was integrated in the head-mounted display to enhance the experience of presence in VR \cite{17,18,21}.
+
+%Research showed that people preferred to associate personal emotional information with smart wearable accessories \cite{19}. Thus, the characteristics of being private, robust, and well-associated with affective feeling makes thermal feedback a good candidate for the output channel in smart wearable accessories. In the extensive HCI research available on thermal feedback, the thermal modules studied were mostly large and attached to the palm and the forearm (besides the integration with the head-mounted display). There has been little investigation on thermal feedback in the form factors of wearable accessories, especially as a finger ring, given physiological research results that show that fingers and the palm have similar temperature sensitivity \cite{27}.
+
+\subsection{Multimodal Haptic Feedback on Fingers}
+Numerous works have studied multimodal feedback such as vibration \cite{12,24}, poking \cite{24}, resistor-based thermal \cite{24}, and skin dragging \cite{13}, on the finger, either in a general setting or in a specific application context. The stimulated locations covered mainly two parts of the finger: the distal phalange (including the side of finger, finger pad, and the nail) and the proximal phalange where a ring is usually worn.
+
+The haptic devices on the distal phalange were usually associated with touch and applied in virtual and augmented reality. Yem et al. \cite{44} developed FingAR, combining electrical and mechanical stimulation to selectively stimulate different types of mechanoreceptors and to achieve high-fidelity tactile sensation during user touch of a virtual surface. More recently, Feng et al. \cite{5} developed Submerged Haptics consisting of 4 3D-printed miniature airbags to provide fingertip haptic feedback with air inflation. Murakami et al. \cite{32} developed AlteredTouch, a fingertip haptic display with integrated force, tactile, and thermal feedback in a miniature form factor with  integration of two DC motors and one peltier module. Hsieh et al. \cite{12} developed NailTactors, a nail-mounted array of tactors to provide eyes-free vibrotactile patterns through spatial encoding of vibration (perception accuracy of 89\%).
+
+Haptic output on the proximal phalange with a finger ring has also received an increasing yet unequal amount of interest, compared to haptic feedback on the distal phalange. As a type of digital jewelry, smart rings benefit from the same social acceptability and emotional bond as traditional jewelry \cite{21}. Pradana et al. \cite{22} developed RingU, supporting remote communication through visual and  vibrotactile feedback in the ring. Roumen et al. \cite{24} compared five types of in-ring notifications: visual, audio, vibrotactile, poke, and thermal. Their results showed that vibrotactile feedback was the most reliable and fastest channel for notification, while thermal channel, which was implemented using resistors, was the slowest. This specific limitation was caused by the hardware, as their system needed more than 7 seconds of warming versus 1 second for a TEC. Despite this limitation, they found consistent and accurate thermal perception by some participants, and suggested interesting scenarios in which thermal feedback could be desirable, such as a notification channel for moderately urgent messages. Je et al. \cite{13} developed tactoRing, a ring-size tactile display that provides haptic feedback by dragging a small gear tactor on the skin around the finger, achieving an accuracy of 94\%. More recently, Han et al. \cite{11} designed Frictio, providing in-ring friction-based force feedback, with requirement of input from the non-wearing hand.
+
+While visual, auditory, vibrotactile, poking, and skin-dragging feedbacks have been investigated in the context of a finger ring with optimal technical implementation, the existing attempts for in-ring thermal feedback were based on resistor heat generation, which is slow and unidirectional. There is a lack of research on how TEC-based bidirectional thermal feedback can be integrated and elaborated in a finger ring setting. In this paper, we present a prototype of a finger ring with multiple TECs that can achieve different levels of thermal feedback around the finger.
+
+%Numerous works have studied multimodal feedback such as vibration \cite{11,22}, poking \cite{22}, resistor-based thermal \cite{22}, and skin dragging \cite{12}, on the finger, either in a general setting or in a specific application context. The stimulated locations covered mainly two parts of the finger: the distal phalange (including the side of finger, finger pad, and the nail) and the proximal phalange where a ring is usually worn.
+
+%The haptic devices on the distal phalange were usually associated with touch and applied in virtual and augmented reality. Yem et al. \cite{39} developed FingAR, combining electrical and mechanical stimulation to selectively stimulate different types of mechanoreceptors and to achieve high-fidelity tactile sensation during user touch of a virtual surface. More recently, Feng et al. \cite{5} developed Submerged Haptics consisting of 4 3D-printed miniature airbags to provide fingertip haptic feedback with air inflation. Murakami et al. \cite{28} developed AlteredTouch, a fingertip haptic display with integrated force, tactile, and thermal feedback in a miniature form factor with  integration of two DC motors and one peltier module. Hsieh et al. \cite{11} developed NailTactors, a nail-mounted array of tactors to provide eyes-free vibrotactile patterns through spatial encoding of vibration (perception accuracy of 89\%).
+
+%Haptic output on the proximal phalange with a finger ring has also received an increasing yet unequal amount of interest, compared to haptic feedback on the distal phalange.
+
+%As a type of digital jewelry, smart rings benefit from the same social acceptability and emotional bond as traditional jewelry \cite{19}. Pradana et al. \cite{20} developed RingU, supporting remote communication through visual and  vibrotactile feedback in the ring. Roumen et al. \cite{22} compared five types of in-ring notifications: visual, audio, vibrotactile, poke, and thermal. Their results showed that vibrotactile feedback was the most reliable and fastest channel for notification, while thermal channel, which was implemented using resistors, was the slowest. This specific limitation was caused by the hardware, as their system needed more than 7 seconds of warming versus 1 second for a TEC. Despite this limitation, they found consistent and accurate thermal perception by some participants, and suggested interesting scenarios in which thermal feedback could be desirable, such as a notification channel for moderately urgent messages. Je et al. \cite{12} developed tactoRing, a ring-size tactile display that provides haptic feedback by dragging a small gear tactor on the skin around the finger, achieving an accuracy of 94\%. More recently, Han et al. \cite{10} designed Frictio, providing in-ring friction-based force feedback, with requirement of input from the non-wearing hand.
+
+%While visual, auditory, vibrotactile, poking, and skin-dragging feedbacks have been investigated in the context of a finger ring with optimal technical implementation, the existing attempts for in-ring thermal feedback were based on resistor heat generation, which is slow and unidirectional. There is a lack of research on how TEC-based bidirectional thermal feedback can be integrated and elaborated in a finger ring setting. In this paper, we present a prototype of a finger ring with multiple TECs that can achieve different levels of thermal feedback around the finger.
+
+\section{Hardware Design}
+%In the prototype of the thermal ring, we used a 5×5 mm TEC element (Model No.: TEC1-00701) attached to a 6×6 mm heat sink, as shown in Fig. \ref{fig:2}. The rings were 3D printed with PLA. As shown in Fig. \ref{fig:3}, each ring contained 6 or 8 6x6 mm square holes, for easy installment and removal of the TEC modules. Once the TEC modules were installed in the ring, the ring was further tightened with a rubber band, ensuring the TEC modules attached firmly to the skin.
+
+%Each TEC module was connected to an external motor-driver circuit (L298N). An external power supply with 9V2A was connected to the motor driver through a relay circuit. Due to the miniature size of the TEC module, it was challenging to embed the thermistor in the module. Therefore, we adopted the sensorless temperature-control method proposed by Odhner and Asada \cite{16}. The system was controlled by the Arduino Mega 2560 connected to a PC through USB, to ensure the fine control of the temperature through Pulse Width Modulation (PWM). Through empirical pilot tests, we found that a 3-second stimulation at a rate of +/- 1 $^{\circ}$C/s could provide a reliable yet not painful thermal sensation, while stimulation with +3 $^{\circ}$C/s could cause painful sensation even in a short duration (1 second). Therefore, the TEC module was tuned to change the temperature at a rate of +/- 1 $^{\circ}$C/s for 3 seconds.  Fig. \ref{fig:4} illustrates the arrangement and assembly of the TEC modules in the three settings.
+
+In the prototype of the thermal ring, we used a 5×5 mm TEC element (Model No.: TEC1-00701) attached to a $6 \times 6$ mm heat sink, as shown in Fig. \ref{fig:2}.  The rings were 3D printed with PLA. As shown in , each ring contained 6 or 8 6x6 mm square holes (Fig. \ref{fig:3}), for easy installment and removal of the TEC modules. Once the TEC modules were installed in the ring, the ring was further tightened with a rubber band, ensuring the TEC modules attached firmly to the skin.
+
+Each TEC module was connected to an external motor-driver circuit (L298N). An external power supply with 9V2A was connected to the motor driver through a relay circuit. Due to the miniature size of the TEC module, it was challenging to embed the thermistor in the module. Therefore, we adopted the sensorless temperature-control method proposed by Odhner and Asada \cite{18}. The system was controlled by the Arduino Mega 2560 connected to a PC through USB, to ensure the fine control of the temperature through Pulse Width Modulation (PWM). Through empirical pilot tests, we found that a 3-second stimulation at a rate of +/- 1$^{\circ}$C/s could provide a reliable yet not painful thermal sensation, while stimulation with +3 $^{\circ}$C/s could cause painful sensation even in a short duration (1 second). Therefore, the TEC module was tuned to change the temperature at a rate of +/- 1 $^{\circ}$C/s  for 3 seconds.  Fig. \ref{fig:4} illustrates the arrangement and assembly of the TEC modules in the three settings.
+
+
+\begin{figure}[h]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.8\columnwidth]{img/fig2.png}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{TEC Module. Dime for scale.}
+  \label{fig:2}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.8\columnwidth]{img/fig3.png}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Set of rings of different sizes (6 to 11 US sizes) used in this paper.}
+  \label{fig:3}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.8\columnwidth]{img/fig4.png}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Arrangement and assembly of the TEC modules in the three different settings.}
+  \label{fig:4}
+\end{figure}
+
+\section{Pilot Experiment}
+In our pilot experiment, we investigated the resolution of the thermal ring, i.e. the maximum number of discrete points users could perceive around a single finger. We chose three conditions for this experiment: a ring with 4, 6, or 8 TEC elements.
+
+\subsection{Participants}
+Nine participants (5 females, 8 right-handed) ranging from 23 to 31 years old (M=26.76, SD=2.78) were recruited from within the university community. The average skin temperature on the finger was 32.6 $^{\circ}$C (SD = 1.342). \colorbox{yellow}{Research showed that XX could potentially cause pain.} To ensure the wellbeing of participants and the execution of the experiment, we conducted a 2-minute pre-study session to test the thermal and pain threshold of the recruited participants, and excluded those with overly-sensitive skin.
+%Nine participants (five females, eight right-handed) ranging from 23 to 31 years old (M=26.5, SD=2.78) were recruited from within the university community. The average skin temperature on the finger was 32.6 $^{\circ}$C (SD = 1.42). To ensure the wellbeing of participants and the execution of the experiment, we conducted a 2-minute pre-study session to test the thermal and pain threshold of the recruited participants, and excluded those with overly-sensitive skin.
+%We also observed a few potential participants with a higher thermal threshold, meaning they could not distinguish temperature change in the ring. They were excluded from the study as well. The excluded participants left the experiment after the pre-study session with a US$0.5 souvenir. Otherwise, the participants received a ~US$6 shopping coupon after finishing the whole experiment.
+\subsection{Apparatus}
+%For this experiment, we designed 12 ring prototypes in sizes ranging from US 6 (diameter of 16.45 mm) to US 11 (diameter of 20.6 mm), as shown in Fig. 3. Each ring contained 6 or 8 TEC elements on them. For the 4-TEC condition, we only installed 4 TECs in the 8-TEC ring. At the beginning of the experiment, we selected the ring best fit each participant. The rings were worn on the index finger of their non-dominant hand. An iPad Air 2 was used to display the GUI webpage content for training and testing, and allow the participants to select their answers. The GUI webpage was connected to the PC server through a TCP/IP protocol. All sessions were facilitated by the same experimenter and conducted in a university office with central air-conditioning, maintaining a stable room temperature of 27 $^{\circ}$C.
+For this experiment, we designed 12 ring prototypes in sizes ranging from US 6 (diameter of 16.45 mm) to US 11 (diameter of 20.6 mm), as shown in Fig. 3. Each ring contained 6 or 8 TEC elements on them. For the 4-TEC condition, we only installed 4 TECs in the 8-TEC ring. At the beginning of the experiment, we selected the ring best fit each participant. The rings were worn on the index finger of their non-dominant hand. An iPad Air 2 was used to display the GUI webpage content for training and testing, and allow the participants to select their answers. The GUI webpage was connected to the PC server through a web-socket protocol. All sessions were facilitated by the same experimenter and conducted in a university office with central air-conditioning, maintaining a stable room temperature of 27 $^{\circ}$C.
+
+\subsection{Tasks and Stimuli}
+%During each test trial, one of the elements would get activated on two temperature levels we chose (hot : + 1 $^{\circ}$C/s and cold : -1 $^{\circ}$C/s) for 3 seconds. The participant would then, without looking at their hand, determine on which elements the stimulus happened by selecting the correct element on the iPad Air 2. There was a 15-second break between trials.
+During each test trial, one of the elements would get activated on two temperature levels we chose (hot : + 1 $^{\circ}$C/s and cold : -1 $^{\circ}$C/s) for 3 seconds. \colorbox{yellow}{The TECs started the temperature change from the skin temperature of the user.} The participant would then, without looking at their hand, determine on which elements the stimulus happened by selecting the correct element on the iPad Air 2. There was a 15-second  break between trials, to allow the skin naturally return to the resting temperature which was record before the experiment.
+
+\subsection{Procedure}
+%Participants began the experiment by filling a pre-test questionnaire with demographic information. Their skin temperature on the finger was collected. Before starting, the experimenter helped the participant choose and put on a ring that would best fit on their finger among the six different sizes. The ring was then put on the finger to reach the positions shown in Fig. \ref{fig:1}.
+
+%The experiment was divided into three sections (one for each TEC setting). Each section started with a training block where each stimulus was triggered clockwise sequentially starting from the bottom element for the 4-TEC and the 8-TEC setting, and the left element for the 6-TEC setting. During each stimulus in the training, the iPad Air 2 showed the corresponding location being highlighted in blue for cold stimulus or red for hot stimulus (Fig. \ref{fig:5}b). This was repeated twice. After training, participants completed two test blocks, where stimuli were presented in a randomized order. Participants selected the stimulated element by tapping on the smaller circle in the web page (Fig. \ref{fig:5}c). After completing each test block, participants filled a post-experimental questionnaire to measure the perceived level of difficulty and comfort using a 7-point likert scale (1 – not difficult /comfortable at all, 7 – extremely difficult/comfortable).
+Participants began the experiment by filling a pre-test questionnaire with demographic information. Their skin temperature on the finger was collected. Before starting, the experimenter helped the participant choose and put on a ring that would best fit on their finger among the six different sizes. The ring was then put on the finger to reach the positions shown in Fig. \ref{fig:1}.
+
+The experiment was divided into three sections (one for each TEC setting). Each section started with a training block where each stimulus was triggered clockwise sequentially starting from the bottom element for the 4-TEC and the 8-TEC setting, and the left element for the 6-TEC setting. During each stimulus in the training, the iPad Air 2 showed the corresponding location being highlighted in blue for cold stimulus or red for hot stimulus (Fig.  \ref{fig:5}b). This was repeated twice. After training, participants completed two test blocks, where stimuli were presented in a randomized order. The selection interface was displayed after each stimulation, and participants selected the stimulated element by tapping on the smaller circle in the web page (Fig.  \ref{fig:5}c). After completing each test block, participants filled a post-experimental questionnaire to measure the perceived level of difficulty and comfort using a 7-point likert scale (1 - not difficult /comfortable at all, 7 - extremely difficult/comfortable).
+
+
+\begin{figure}[tp]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.8\columnwidth]{img/fig5.png}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{(a) Experiment setup; (b) Training Interface for the 4-TEC setting; (c) Testing Interface for the 4-TEC setting.}
+  \label{fig:5}
+\end{figure}
+
+\subsection{Experiment Design}
+A $3 \times 2$ within-subject design was used with two independent variables: number of TECs (4, 6, 8) and temperature change {cold (-1 $^{\circ}$C/s), hot (+1 $^{\circ}$C/s)}. The number of TECs was counterbalanced using Latin Square and temperature was randomized within blocks. We measured two dependent variables: element accuracy and response time (i.e. time to complete a trial after the stimulation). A trial was considered successful when the participant was able to identify the correct element that was activated. Participants could take voluntary breaks between blocks.
+
+Each participant performed the experiment in one sitting (Fig. \ref{fig:5}a), placing his/her ring-wearing hand on the keyboard drawer of the table, thus he/she couldn't see the ring. The experiment lasted for around 70 minutes. In total, each participant did a total of 3 conditions (number of elements) $\times$ 2 temperatures $\times$ [1 training block + 2 test blocks] $\times$ (4+6+8) stimuli = 216 trials.
+
+%A 3×2 within-subject design was used with two independent variables: number of TECs (4, 6, 8) and temperature change {cold (-1 $^{\circ}$C/s), hot (+1 $^{\circ}$C/s)}. The number of TECs was counterbalanced using Latin Square and temperature was randomized within blocks.. We measured two dependent variables: element accuracy and response time (i.e. time to complete a trial). A trial was considered successful when the participant was able to identify the correct element that was activated (element accuracy). Participants could take voluntary breaks between blocks.
+
+%Each participant performed the experiment in one sitting (Fig. 5a), placing his/her ring-wearing hand on the keyboard drawer of the table, thus he/she couldn’t see the ring. The experiment lasted for around 70 minutes. In total, each participant did a total of 3 conditions – (number of elements) × 2 temperatures × \cite{1 training block + 2 test blocks} × (4+6+8) stimuli = 216 trials.
+
+\subsection{Results}
+%A two-way ANOVA test was conducted separately for the two dependent variables: the accuracy of element identification and the response time.
+A repeated measures ANOVA test was conducted for the two dependent variables: the accuracy of element identification and the response time.
+
+\subsubsection{Accuracy of Element Identification}
+The accuracy of element identification was significantly affected by the number of TECs (F(2,16) = 77.45, p $<$0.0005, $\eta_p^2$ = 0.906) and the direction of temperature change (F(1,8) = 21.34, p $<$ 0.005, $\eta_p^2$ = 0.727). There was no significant difference between two blocks in term of accuracy. A post-hoc Tukey HSD Test showed the accuracy of element identification in the 4-TEC setting (89.9\%) was significantly higher than the accuracy in the 6-TEC setting (73.8\%, p $<$ 0.0005), which was significantly higher than the accuracy in the 8-TEC setting (52.7\%, p $<$ 0.0005). The accuracy of element identification with cold stimulation (78.7\%) was significantly higher than the accuracy with hot stimulation (65.6\%, p $<$ 0.005).
+
+%There was no significant interaction effect of the two factors (the number of elements and the direction of temperature change) on the accuracy of element identific. ation. 
+There was no significant interaction effect among the block, the number of TECs, and the direction and temperature change. In all settings, the participants could perceive the stimulated position more accurately with cold stimulation than hot stimulation. More specifically, the participants achieved an accuracy of 97.2\% for cold stimulation and 82.4\% for hot stimulation in the 4-TEC setting (Fig. \ref{fig:6}).
+%The accuracy of element identification was significantly affected by the number of TECs (F(2, 102) = 78.91, p $<$ 0.0005,  $\eta_p^2$ = 0.607) and the direction of temperature change (F(1,102) = 29.97, p $<$ 0.0001,  $\eta_p^2$ = 0.222). A post-hoc Tukey HSD Test showed the accuracy of element identification in the 4-TEC setting (89.9\%) was significantly higher than the accuracy in the 6-TEC setting (73.8\%, p $<$ 0.005), which was significantly higher than the accuracy in the 8-TEC setting (52.7\%, p $<$ 0.005). The accuracy of element identification with cold stimulation (78.7\%) was significantly higher than the accuracy with hot stimulation (65.6\%, p $<$ 0.005).
+
+%There was no significant interaction effect of the two factors (the number of elements and the direction of temperature change) on the accuracy of element identification. In all three settings, the participants could perceive the stimulated position more accurately with cold stimulation than hot stimulation. More specifically, the participants achieved an accuracy of 97.2\% for cold stimulation and 82.4\% for hot stimulation in the 4-TEC setting (Fig. \ref{fig:6}).
+
+%XXXX Ken: need to update all figure with new stats.
+
+\begin{figure}[tp]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.7\columnwidth]{img/fig6.pdf}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Accuracy of Element identification for the pilot study. Error bars show .95 confidence intervals.}
+  \label{fig:6}
+\end{figure}
+
+\subsubsection{Individual Accuracy in 4-TEC setting}
+%The 4-TEC setting afforded the highest accuracy of element identification. To compare the accuracy of each individual TEC (Fig. \ref{fig:7}), we had a new factor, which was the actuator location (top, right, bottom, left). We ran a non-parametric Friedman Test, and found a significant main effect of TEC location ($\chi^2$(3) = 8.533, p $<$ 0.05). More specially, a pair-wise comparison showed that the average accuracy of perceiving the top TEC (98.5\%) was significantly higher than the accuracy of the bottom TEC (77.3\%, p $<$ 0.05). There was no significant difference between the average accuracy of the top TEC and the average accuracy of the left or right TEC (left: 88.2\%, right: 88.2\%).
+The 4-TEC setting afforded the highest accuracy of element identification. To compare the accuracy of each individual TEC (Fig. 7), we had a new factor, which was the actuator location (top, right, bottom, left). We ran a repeated measures ANOVA test, and found a significant main effect of TEC location (F(3, 24) = 7.53, p $<$ 0.005, $\eta_p^2$ = 0.485) on the accuracy, while there was no significant difference between the two sequential blocks. More specially, a pair-wise comparison showed that the average accuracy of perceiving the top TEC (97.2\%) was significantly higher than the accuracy of the bottom TEC (80.6\%, p $<$ 0.05). There was no significant difference between the average accuracy of the top TEC and the average accuracy of the left or right TEC (left: 88.9\%, right: 88.9\%). 
+
+The direction of temperature change also placed a significant effect on the accuracy (F(1, 8) = 11.13, p $<$ 0.05, $\eta_p^2$ = 0.582). A post-hoc pair-wise comparison showed that the average accuracy of identifying the positions of cold stimulus was significantly higher than the the accuracy of hot stimulus (p $<$ 0.05). In addition, there was a significant interaction effect between the TEC position and the direction of temperature change. More specifically, a post-hoc pair-wise comparison revealed that the accuracy of identifying the top TEC was significantly higher than that of the right (p $<$ 0.05), the left (p $<$ 0.05), and the bottom (p $<$ 0.05) TECs with the hot stimulus, while there was no significant difference among the four positions with the cool stimulus.
+
+\begin{figure}[h]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.4\columnwidth]{img/fig7.pdf}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Accuracy of Individual Element Identificantion for the 4-TEC setting. Blue: cold stimulation, Red: hot stimulation.}
+  \label{fig:7}
+\end{figure}
+
+\subsubsection{Response Time}
+%Response times are summarized in Fig. \ref{fig:8}. Similarly to the accuracy of element identification, the number of TECs (F(2,102) = 8.46, p $<$ 0.0001, $\eta_p^2$ = 0.607) and the direction of temperature change (F(1,102) = 53.88, p $<$ 0.0001,  $\eta_p^2$ = 0.346) had significant effect on the average response time on one trial. A post-hoc Tukey HSD Test showed that there was no significant difference between the time spent by the participants in the 4-TEC setting (3.37 s) and 6-TEC setting (3.54 s), and the participants performed significantly faster in either of these two conditions than the 8-TEC setting (4.14 s, p $<$ 0.05). The average response time was significantly shorter with cold stimulation than hot stimulation (3.09 s vs. 4.27 s, p $<$ 0.005).
+
+Response times are summarized in Fig. \ref{fig:8}. Similarly to the accuracy of element identification, a repeated measures ANOVA showed the number of TECs (F(2,16) = 78.42, p $<$ 0.0005, $\eta_p^2$ = 0.607) and the direction of temperature change (F(1,8) = 20.32, p $<$ 0.0001, $\eta_p^2$ = 0.346) had significant effect on the average response time on one trial. A post-hoc pair-wise comparison showed that there was no significant difference between the time spent by the participants in the 4-TEC setting (3.37 s) and 6-TEC setting (3.54 s), and the participants performed significantly faster in either of these two conditions than the 8-TEC setting (4.14 s, p $<$ 0.05). The average response time was significantly shorter with cold stimulation than hot stimulation (3.0 s vs. 4.27 s, p $<$ 0.005).
+
+\begin{figure}[tp]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.7\columnwidth]{img/fig8.pdf}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Response Time for the pilot study. Error bars show .95 confidence intervals.}
+  \label{fig:8}
+\end{figure}
+
+%There was no significant interaction effect of the two independent factors (number of TECs and temperature change) on the average response time on one trial. In both the 4-TEC and 6-TEC settings, participants performed significantly faster with cold stimulation than hot stimulation (4-TEC: 2.70 s vs. 4.05 s, p $<$ 0.05; 6-TEC: 2.70 s vs. 4.36 s). There was no significant difference between the average response time with cold stimulation and hot stimulation in the 8-TEC setting (3.88 s vs. 4.40 s).
+There was no significant interaction effect of the two independent factors (number of TECs and temperature change) on the average response time on one trial. In both the 4-TEC and 6-TEC settings, participants performed significantly faster with cold stimulation than hot stimulation (4-TEC: 2.70 s vs. 4.05 s, p $<$ 0.05; 6-TEC: 2.70 s vs. 4.36 s). There was no significant difference between the average response time with cold stimulation and hot stimulation in the 8-TEC setting (3.88 s vs. 4.40 s).
+
+\subsection{Discussion}
+%A significant observation of the pilot study is that participants found it easier to precisely locate a cold stimulation compared to a hot one. This result is similar to previous research on other body locations \cite{9}. Additionally, response time was around 1.2 s faster for cold sensation compared to hot. A direct application of these results point to using a cold temperature change to convey information where correct location perception is crucial, for example, in a navigation scenario where each TEC encodes a direction.
+A significant observation of the pilot study is that participants found it easier to precisely locate a cold stimulation compared to a hot one. This result is in line with previous research on other body locations \cite{10}. Additionally, response time was around 1.2 s faster for cold sensation compared to hot. A direct application of these results point to using a cold temperature change to convey information where correct location perception is crucial, for example, in a navigation scenario where each TEC encodes a direction.
+
+%\textbf{What is the scale of the post-expe questionnaire? Ken: 1 - 7. It was described above.}
+
+In terms of ring design, our results suggest that participants are able to discriminate up to four locations on the smart ring with good average accuracy (89.9\%). One-way ANOVA on the post-study questionnaire showed a significant effect of the number of TECs on the perceived difficulty of stimulation identification (F(2, 51) = 21.59, p $<$ 0.005, $\eta_p^2$ = 0.458). The post-hoc Tuckey HSD test suggested that the perceived difficulty of stimulation identification for the 4-TEC setting (M = 2.4, SD = 1.4) and the 6-TEC setting (M = 3.2, SD = 1.0) were significantly lower than those the 8-TEC setting (M = 4.8, SD = 1.3). There was no significantly difference between the perceived difficulty of the 4-TEC setting and the 6-TEC setting. In addition, the perceived comfort of the 4-TEC setting (M = 5.5, SD = 1.1) was slightly but not significantly higher than those of the 6-TEC setting (M = 5.3, SD = 1.1) and the 8-TEC setting (M = 4.9, SD = 1.2). By focusing on each individual actuator on the ring, we also found that it was less accurate to perceive a stimulus on the bottom actuator. Therefore, potential spatial thermal patterns may want to make use mostly of the top, right, and left TECs.
+
+%In terms of ring design, our results suggest that participants are able to discriminate up to four locations on the smart ring with good average accuracy (89.9\%). The other two settings did not achieve a satisfying accuracy, except for the 6-TEC setting with cold temperature change (81.9\%). The post-study questionnaire showed that the perceived difficulty of stimulation identification for the 4-TEC setting (M = 2.5, SD = 1.4) was lower than those for the 6-TEC setting (M = 3.6, SD = 1.0) and the 8-TEC setting (M = 4.8, SD = 1.3), while the comfort of the 4-TEC setting (M = 5.5, SD = 1.1) was higher than those of the 6-TEC setting (M = 5.3, SD = 1.1) and the 8-TEC setting  (M = 4.9, SD = 1.2). By focusing on each individual actuator on the ring, we also found that it was harder to perceive a stimulus on the bottom actuator. Therefore, potential spatial thermal patterns may want to make use mostly of the top, right, and left TECs.
+%Ken: add stats to the questionnaire.
+
+\section{New Thermal Patterns}
+Our pilot study confirmed that users can reliably perceive individual thermal stimulation with the 4-TEC setting. To gain a deeper understanding on the affordance and the expressiveness of the 4-TEC setting, we designed new spatial thermal patterns by combining a pair of neighboring or opposite TECs. \colorbox{yellow}{Although early studies \cite{26,27,31} on thermal localization showed that radiation-based non-contact heat was error-prone in localization due to the phenomenon of spatial thermal summation, later research suggested on-skin thermal stimuli through small thermal-haptic devices could improve the spatial acuity for tactile stimulation \cite{28}. In addition, we hypothesised that the change of the thermal intensity caused by the spatial summation could provide hints and assist users to identify different patterns.}
+
+In our design, each element in a neighboring or opposite pair could be triggered in three thermal levels: hot, neutral, and cold. Therefore, there were eight thermal patterns for each pair. Fig. \ref{fig:9} shows the  patterns on the neighboring pairs (i.e., Top+Left, Top+Right, Bottom+Left, and Bottom+Right). Fig. XX shows the patterns on the Top+Bottom and the Left+Right opposite pairs. To facilitate the data analysis, we coded the TEC elements in the 4-TEC setting with the following scheme: bottom - B, left - L, top - T, right - R. The directions of temperature change were coded as: +1 $^{\circ}$C/s - h, -1 $^{\circ}$C/s - c. For example, the pattern ThRc indicates that the top TEC is triggered with +1 $^{\circ}$C/s, and the right TEC is triggered with -1 $^{\circ}$C/s. As indicated by the pilot study, the heat stimulation at the bottom TEC yielded the lowest identification accuracy, so we excluded the patterns involving the heat stimulation at the bottom TEC (i.e., BhLh, BhLc, BhRh, BhRc, ThBh, and TcBh).
+
+%The pattern Bc indicates the bottom TEC is triggered with -1$^{\circ}$C/s while others remain neutral. 
+
+\begin{figure}[tp]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.9\columnwidth]{img/fig9.pdf}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Patterns (with names) for neighboring TECs, applied on the Top+Right and the Bottom+Left TECs. Red: hot; Blue: cold; White: neutral.}
+  \label{fig:9}
+\end{figure}
+
+Our pilot experiment showed that the participants perceived the cold stimulus 1.2 seconds faster than the hot stimulus. Therefore, while implementing the thermal patterns that contain both hot and cold stimulations (Fig. 9: ThRc, TcRh, \& BcLh; Fig. 12: ThBc, LcRh, \& LhRc), we placed a 1.2-second gap between the hot and the cold stimulation, meaning the cold stimulation was triggered 1.2 seconds after the hot stimulation, to provide a simultaneous sensation of hot and cold.
+
+\section{Experiment 1: Temperature Changes on Neighboring TECs}
+In this experiment, we investigated if participants could recognize temperature changes on neighboring TECs.
+
+\subsection{Participants}
+We applied the same recruitment strategy as the pilot study. Twelve participants (7 females, all right-handed) ranging from 18 to 31 years old (M=26.3, SD=3.52) were recruited from within the university community. The average skin temperature on the finger was 32.5 $^{\circ}$C (SD = 1.52).
+%We applied the same recruitment strategy as the pilot study. Twelve participants (six females, all right-handed) ranging from 18 to 31 years old (M=26.3, SD=3.22) were recruited from within the university community. The average skin temperature on the finger was 32.5 $^{\circ}$C (SD = 1.52).
+
+\subsection{Apparatus}
+%We used the same apparatus as in the pilot experiment: 6 ring prototypes (US size 6 to 11) with 4 TECs on them. The rings were worn on the index finger of the participants’ non-dominant hands. An iPad Air 2 was used for the participants to select their answers.
+We used the same apparatus as in the pilot experiment: 6 ring prototypes (US size 6 to 11) with 4 TECs on them. The rings were worn on the index finger of the participants' non-dominant hands. An iPad Air 2 was used for the participants to select their answers.
+
+\subsection{Tasks and Stimuli}
+%During a single trial, two TECs were activated at one of the three temperature levels (cold, neutral, hot). Our participants had to accurately recognize the temperature level of each TEC. We conducted the experiment with two specific pairs of TECs: Top+Right and Bottom+Left (Fig. \ref{fig:9}).
+During a single trial, two TECs were activated at one of the three temperature levels (cold, neutral, hot). Our participants had to accurately recognize the temperature level of each TEC. We conducted the experiment with all possible neighboring pairs of TECs as shown in Fig. \ref{fig:9}.
+
+%The reason that we did not test other possible neighboring combinations (i.e. Top+Left and Bottom+Right) is that our pilot study suggested that there was no significant difference in the accuracy for identifying left and right elements. Therefore, we assumed that there would be no significant difference on identifying Top+Right and Top+left; the same for Bottom+Left and Bottom+Right. Additionally, to reduce over-stimulation on the same spot, two groups of combinations without overlapping locations were selected.
+%The reason that we did not test other possible neighboring combinations (i.e. Top+Left and Bottom+Right) is that our pilot study suggested that there was no significant difference in the accuracy for identifying left and right elements. Therefore, we assumed that there would be no significant difference on identifying Top+Right and Top+left; the same for Bottom+Left and Bottom+Right. Additionally, to reduce over-stimulation on the same spot, two groups of combinations without overlapping locations were selected.
+
+\subsection{Procedure}
+%Similar to the pilot study, participants began the experiment by filling a pre-questionnaire with demographic information, and the experimenter would helped the participant to choose and put on the ring that best fit their finger.
+Similar to the pilot study, participants began the experiment by filling a pre-questionnaire with demographic information, and the experimenter would helped the participant to put on the ring that best fit their finger.
+
+The experiment was divided into five blocks: two training blocks and three test blocks. In a given block, the XXX patterns were presented three times in a randomized order. In training block, the participant was told which pattern was just triggered with the visual patterns in Fig. \ref{fig:9} shown on the iPad Air 2, while in the test block, they had to recognize the pattern by selecting the stimulated elements and temperatures. Fig. \ref{fig:10} shows the selection interface we used in the test block. When the stimulation was off, a pair of red and blue circle buttons was shown next to each spot. The participant needed to make their selection by tapping on the buttons, and tapping the ``Next'' button to trigger a new stimulation. After completing the five blocks, participants filled out a post-experimental questionnaire to measure the perceived level of difficulty and comfort of detecting the thermal patterns using a 7-point likert scale, following the similar scheme in the pilot study. The participants also needed to elicit potential applications for the thermal patterns.
+
+%The experiment was divided into five blocks: two training blocks and three test blocks. In a given block, the eight patterns were presented twice in a randomized order. In training block, the participant was told which pattern was just triggered with the visual patterns in Fig. \ref{fig:9} shown on the iPad Air 2, while in the test block, they had to recognize the pattern by selecting the stimulated elements and temperatures. Fig. \ref{fig:10} shows the selection interface we used in the test block. When the stimulation was off, a pair of red and blue circle buttons was shown next to each spot. The participant needed to make their selection by tapping on the buttons, and tapping the ``next'' button to trigger a new stimulation. After completing the five blocks, participants filled out a post-experimental questionnaire to measure the perceived level of difficulty and comfort of detecting the thermal patterns using a 7-point likert scale, following the similar scheme in the pilot study. The participants also needed to elicit potential applications for the thermal patterns.
+
+\begin{figure}[h]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.5\columnwidth]{img/fig10.pdf}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Selection interface for Experiment 1 \& 2.}
+  \label{fig:10}
+\end{figure}
+
+\subsection{Experiment Design}
+%A within-subject design was used with one independent variable: TEC Group (Top+Right, Bottom+Left). For both  groups, we tested our 8 possible combinational patterns (16 total). The factor was randomized within blocks.
+
+ %For both groups, we tested our 8 possible combinational patterns (16 total). The factor was randomized within blocks.
+
+%We measured three dependent variables: location accuracy, temperature accuracy, and response time. A trial was considered successful when the participant was able to identify the correct location and temperature level for both TECs. There was a 25-second break between two trials.
+A within-subject design was used with one independent variable: pattern. We measured two dependent variables: accuracy, and response time. A trial was considered successful when the participant was able to identify the correct location and temperature level for both TECs. There was a 25-second break between two trials, for the skin to naturally return to the resting temperature.
+
+Each participant performed the experiment in one sitting, including breaks. The experiment lasted for around 45 minutes. In total, each participant did a total of XXX patterns $\times$ [1 training blocks + 1 test block] $\times$ 3 repetitions = XXX trials.
+%Each participant performed the experiment in one sitting, including breaks. The experiment lasted for around 45 minutes. In total, each participant did a total of 2 TEC groups × 8 patterns × \cite{2 training blocks + 3 test blocks} × 2 repetitions = 80 trials.
+
+\subsection{Results}
+The repeated measure ANOVA showed that the type of the neighboring thermal pattern significantly affected the identification accuracy (F(11,121) = 5.42, p $<$ 0.0005, $\eta_p^2$ = 0.33), but had no significant effect on the average time. Fig. XXX shows the XXX. (The results of post-hoc pairwise comparison are indicated by *).
+
+Generally, XXX are better than XXX.
+%The Student’s T-test (t(480) = 4.03, p $<$ 0.005, Cohen's d = 0.375) showed that the accuracy for identifying the thermal patterns of the Top+Right combination (77.9\%) was significantly higher than those of the Bottom+Left combination (61.3\%). Conversely, Student’s T-test showed no significantly difference between the average response time for the Top+Right combination (M = 2.70 s, SD = 2.25) and the Bottom+Left combination (M = 2.79 s, SD = 2.75).
+%The Student'��s T-test (t(287) = 4,49, p $<$ 0.005, Cohen's d = 0.386) showed that the accuracy for identifying the thermal patterns of the Top+Right combination (81.0\%) was significantly higher than those of the Bottom+Left combination (63.6\%). Conversely, Student's T-test showed no significant difference between the average response time for the Top+Right combination (M = 2.36 s, SD = 0.124) and the Bottom+Left combination (M = 2.35 s, SD = 0.120).
+
+%When comparing the thermal patterns of the Top+Right combination among themselves, one-way ANOVA showed that there was a significant difference among these thermal patterns in terms of the identification accuracy (F(15, 560) = 5.54, p $<$ 0.005, $\eta_p^2$ = 0.129) and the response time (F(15, 560) = 4.48, p $<$ 0.005, $\eta_p^2$ = 0.157). Fig. 11 illustrates the confusion table for all neighboring thermal patterns. The post-hoc Tukey HSD test revealed that the identification accuracy of ThRh (45.7\%) and BhLh (45.7\%), which were the lowest, were  significantly lower than six other patterns (i.e. Bc: 82.4\%, TcRh: 84.2\%, TcRc: 86.8\%, ThRc: 86.5\%, Tc: 94.1\%, Rc: 94.6\%). The post-hoc Tukey HSD test on the response time showed that the average response time of Lh (M = 3.68s s, SD = 0.41) was significantly longer than Tc (M = 1.34 s, SD = 0.28), Rc (M = 1.62 s, SD = 0.78), and TcRc (M = 1.73 s, SD = 0.16).
+
+%When comparing the thermal patterns of the Top+Right combination among themselves, one-way ANOVA showed that there was a significant difference among these thermal patterns in terms of the identification accuracy (F(7,240) = 3.55, p $<$ 0.005,  $\eta_p^2$ = 0.096) and the response time (F(7,240) = 4.46, p $<$ 0.005,  $\eta_p^2$ = 0.148). Fig. \ref{fig:11} illustrates the confusion table for all neighboring thermal patterns. The post-hoc Tukey HSD test revealed that the identification accuracy of the ThRh (46.7\%) was significantly lower than all other patterns except TcRh (73.3\%) and Th (76.7\%), while there was no significant difference in other pairwise comparisons. The post-hoc Tukey HSD test showed that the response time of Rh (M = 5.28 s, SD = 2.41) was significantly longer than Tc (M = 2.51 s, SD = 1.28), Rc (M = 3.21 s, SD = 1.78), and TcRc (M = 2.73 s, SD = 1.16).
+
+\begin{figure}[tp]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.9\columnwidth]{img/fig11.png}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Confusion table for the neighboring thermal patterns. Columns represent stimulated pattern and rows the participants' input.}
+  \label{fig:11}
+\end{figure}
+
+\subsection{Discussion}
+%We noted that 7 out of the 16 patterns had over 80\% accuracy: Bc, Lc, Tc, Rh, Rc, TcRc, and ThRc. An additional 2 patterns achieved more than 70\% accuracy: Th and TcRh. Our set of 9 potentially usable neighboring patterns either:
+%We noted that 7 out of the 16 patterns had over 80\% accuracy: Bc, Lc, Tc, Rc, TcRc, ThRc, and TcRh. An additional 2 patterns achieved more than 70\% accuracy: Th and Rh. Our set of 9 potentially usable neighboring patterns either:
+
+Pure Cold patterns are easily perceived.
+
+%\begin{itemize}
+%\item involved one TEC with a cold temperature, plus Rh and Th;
+%\item or involved the Top+Right pair, with at least one cold temperature change.
+%\end{itemize}
+
+
+%This set confirms that participants had trouble precisely locating hot sensations, and also that combining two hot TECs does not produce recognizable patterns. The participants commented that the hot stimulation gave a spreading thermal feeling, making it hard to locate, but it became easier when there is a contrast between hot and cold. Additionally, the Bottom+Left pair did not yield any reliable combinational pattern, which can be explained by the relative low accuracy of the Bottom TEC, as demonstrated in the pilot experiment.
+%This set confirms that participants had trouble precisely locating hot sensations, and also that combining two hot TECs does not produce recognizable patterns. This further echoed with the previous research on spatial thermal summation of warmth \cite{30}.  The participants commented that the hot stimulation gave a spreading thermal feeling, making it hard to locate, but the cold stimulation could produce a more localized sensation even with two simultaneous cold stimulations (i.e. TcRc). Furthermore, it became easier when there is a contrast between hot and cold. Additionally, the Bottom+Left pair did not yield any reliable combinational pattern, which can be explained by the relative low accuracy of the Bottom TEC, as demonstrated in the pilot experiment.
+
+%At the end of the experiment, we asked our participants to suggest potential applications. Among the suggestions we gathered, many were about notifications. In this setting, our nine patterns could be used to encode up to nine different types of discrete notifications (e.g. SMS vs. email vs. instant message on Whatsapp, etc.).
+
+%While previous research \cite{13} showed on-finger ring-type devices could convey directional notifications through skin dragging, participants in our experiment suggested using the thermal patterns for navigation, in which case we suggest to use Bc, Lc, Tc, Rc for discrete direction. TcRc could also be used to propose a direction such as Northwest. Based on the results from both Experiment 1 and the pilot study, we also suggest that LcTc (Northeast) could also be used in a similar way. For more precision, ThRc and TcRh (respectively LhTc, LcTh) could be used to propose even more alternatives, such as North-Northwest or Northwest-West. One may argue that the omnidirectional characteristics of ring and finger could place potential difficulty on using finger ring as a directional cueing device. Yet, there exist a large amount of ring-type jewelry, such as pearl rings, diamond rings, rings with visual icons, suggesting specifics wearing directions to show the on-ring accessories. In addition, with the development of smart sensors and miniature circuits, we can envision that in the near future, it would be easy to identify the finger directions usng smart watches and smart rings with miniature IMU sensors.
+
+%Another suggested application for our ring would be immersive experience for gaming, mainly by providing thermal feedback in VR. Three participants commented that they could feel a kind of heat/cold on their fingertips when the top TEC element was triggered. This suggested a potential direction on integrating our ring and the fingertip tactile devices to provide simultaneous thermal and tactile sensation in VR.
+
+
+%At the end of the experiment, we asked our participants to suggest potential applications. Among the suggestions we gathered, many were about notifications. In this setting, our nine patterns could be used to encode up to nine different types of discrete notifications (e.g. SMS vs. email vs. instant message on Whatsapp, etc.).
+
+%Participants also suggested using the thermal patterns for navigation, in which case we suggest to use Bc, Lc, Tc, Rc for discrete direction. TcRc could also be used to propose a direction such as Northwest. Based on the results from both Experiment 1 and the pilot study, we also suggest that LcTc (Northeast) could also be used in a similar way. For more precision, ThRc and TcRh (respectively LhTc, LcTh) could be used to propose even more alternatives, such as North-Northwest or Northwest-West.
+%Another suggested application for our ring would be immersive experience for gaming, mainly by providing thermal feedback in VR. Three participants commented that they could feel a kind of heat/cold on their fingertips when the top TEC element was triggered. This suggested a potential direction on integrating our ring and the fingertip tactile devices to provide simultaneous thermal and tactile sensation in VR.
+
+\section{Experiment 2: Temperature Changes on Opposite TECs}
+We believe that our proposed ring design can also be used to compare different quantities, such as the ratings of two shops, which could be encoded using different temperatures. We conducted another experiment similar to Experiment 1, which considered opposite TECs instead.
+
+\subsection{Participants}
+%The same recruitment strategy was applied. Twelve participants (6 females, all right-handed) ranging from 19 to 31 years old (M = 25.2, SD = 3.32) were recruited from within the university community. The average skin temperature on the finger was 34.1$^{\circ}$C (SD = 1.53).
+The same recruitment strategy was applied. Twelve participants (5 females, all right-handed) ranging from 19 to 31 years old (M = 22.3, SD = 3.57) were recruited from within the university community. The average skin temperature on the finger was 33.6$^{\circ}$C (SD = 1.53).
+
+\subsection{Apparatus, Task and Stimuli, Procedure}
+%We used the exact same apparatus and procedure as Experiment 1. The 16 patterns of the Top+Bottom pair are shown in Fig. \ref{fig:12}.
+We used the exact same apparatus and procedure as Experiment 1. The XXX patterns are shown in Fig. 12.
+
+\begin{figure}[tp]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.9\columnwidth]{img/fig12.pdf}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Patterns (with names) for opposite TECs, applied on the Top+Bottom and the Left+Right TECs. Red: hot; Blue: cold.}
+  \label{fig:12}
+\end{figure}
+
+\subsection{Experiment Design}
+%The design of Experiment 2 was similar to Experiment 1. Our only independent variable was the TEC group (Top+Bottom, Left+Right), which was randomized within blocks. We measured location accuracy, temperature accuracy, and the response time. A trial was considered successful when the participant was able to identify the correct temperature level for both TECs. Each participant performed the experiment in one sitting, including breaks. The experiment lasted for around 45 minutes. In total, each participant did a total of 2 TEC groups × 16 patterns × \cite{2 training block + 3 test blocks} = 80 trials.
+The design of Experiment 2 was similar to Experiment 1. Our only independent variable was the TEC pattern, which was randomized within blocks. We measured location accuracy, temperature accuracy, and the response time. A trial was considered successful when the participant was able to identify the correct temperature level for both TECs. Each participant performed the experiment in one sitting, including breaks. The experiment lasted for around 45 minutes. In total, each participant did a total of XX patterns $\times$ [1 training block + 1 test blocks] $\times$ 3 repetitions = XX trials.
+
+
+\subsection{Results}
+%The Student’s t-test showed no significant effect of the TEC group on the accuracy and the response time of identifying the thermal patterns. The accuracy in the Top+Bottom and the Left+Right combinations were 74.2\% and 78.3\%, respectively, and the average response times were 1.85 s (SD = 2.25) and 2.09 s (SD = 1.57), respectively.
+
+%Similar to the neighboring patterns, one-way ANOVA showed that there was a significant difference among these opposite thermal patterns in terms of the identification accuracy (F(15,480) = 5.63, p $<$ 0.005,  $\eta_p^2$ = 0.154) but not the response time. Fig. \ref{fig:13} illustrates the confusion table for all opposite thermal patterns. Post-hoc Tukey HSD tests were conducted for pairwise comparison. The accuracy for BhTh (30.0\%) was significantly lower than the other patterns except BhTc (53.3\%) and LhRh (60.0\%). The accuracy for BhTc was significantly lower than Bc (96.7\%), Tc (93.3\%), Lc (90.0\%), BcTc (90.0\%), LcRc (90.0\%). The accuracy for LhRh was significantly lower than Bc.
+%The Student's t-test showed no significant effect of the TEC group on the accuracy and the response time of identifying the thermal patterns. The accuracy in the Top+Bottom and the Left+Right combinations were 76.4\% and 80.2\%, respectively, and the average response times were 2.06 s (SD = 0.120) and 2.21 s (SD = 0.131), respectively.
+
+Similar to the neighboring patterns, one-way ANOVA showed that there was a significant difference among these opposite thermal patterns in terms of the identification accuracy (F(5, 55) = 5.55, p < 0.0005, $\eta_p^2$ = 0.335) and the response time (F(5, 55) = 5.35, p < 0.0005, $\eta_p^2$ = 0.327). Fig. 13 illustrates the confusion table for all opposite thermal patterns. Post-hoc Tukey HSD tests were conducted for pairwise comparison. The accuracy for BhTh (30.6\%) was significantly lower than the other patterns except BhTc (58.3\%) and LhRh (61.1\%). The accuracy for BhTc was significantly lower than Bc (97.2\%), Tc (94.4\%), Lc (91.7\%), BcTc (91.7\%), LcRc (91.7\%). The accuracy for LhRh was significantly lower than Bc.
+
+
+\begin{figure}[tp]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.9\columnwidth]{img/fig13.png}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Confusion table for the opposite thermal patterns. Columns represent stimulated pattern and rows the participants' input.}
+  \label{fig:13}
+\end{figure}
+
+\subsection{Discussion}
+%In terms of accuracy, we found 9 patterns with 80\% accuracy or more: Bc, Lc, Th, Tc, Rc. BcTc, LcRc, LhRc, and LcRh. An additional 3 patterns achieved more than 73\% accuracy: Bh, Rh, and BcTh. We can classify these patterns as:
+In terms of accuracy, we found 10 patterns with 80\% accuracy or more: Bc, Lc, Th, Tc, Rc. BcTc, BcTh, LcRc, LhRc, and LcRh. An additional 2 patterns achieved more than 73\% accuracy: Bh and Rh. We can classify these patterns as:
+
+\begin{itemize}
+\item involving a single TEC, with any non-neutral temperature change (plus Lh);
+\item or involving the Left+Right pair with at least one cold temperature change;
+\item or involving the Bottom+Top pair with a cold temperature change on the bottom TEC.
+\end{itemize}
+
+%Similar to Experiment 1, we found that it was difficult for the participants to recognize the thermal patterns of combining two hot opposite TECs.
+%Similar to Experiment 1, we found that it was difficult for the participants to recognize the thermal patterns of combining two hot opposite TECs.
+
+Besides having similar application as the neighboring thermal patterns (e.g., notification and VR), the feedback from the participants suggested that opposite TECs could be used to encode information with two dimensions. For example, the temperatures of the two opposite TECs could be used to represent the ratings on the food and the interior decoration of a restaurant. The participants also suggested that the thermal patterns of the opposite pairs could be used to perform an overall comparison of two artifacts. For example, when two restaurants, one on the left and the other on the right, are selected for comparison, the side with a higher temperature indicates a higher rating, and the colder side indicates a lower rating. It is essential to detect the difference between two temperatures in the opposite pair when performing the comparison. The participants achieved an overall accuracy of 81.5\% for detecting different temperatures in the opposite pairs (i.e. all patterns except ThBh, TcBc, LhRh, and LcRc)
+
+%Besides having similar application as the neighboring thermal patterns (e.g., notification and VR), the feedback from the participants suggested that opposite TECs could be used to encode information with two dimensions. For example, the temperatures of the two opposite TECs could be used to represent the ratings on the food and the interior decoration of a restaurant. The participants also suggested that the thermal patterns of the opposite pairs could be used to perform an overall comparison of two artifacts. For example, when two restaurants, one on the left and the other on the right, are selected for comparison, the side with a higher temperature indicates a higher rating, and the colder side indicates a lower rating. It is essential to detect the difference between two temperatures in the opposite pair when performing the comparison. The participants achieved an overall accuracy of 80.7\% while detecting different temperatures in the opposite pairs (i.e. all patterns except ThBh, TcBc, LhRh, and LcRc)
+
+\section{Selecting good patterns}
+Based on the pilot study, and Experiment 1 \& 2, we selected the patterns that the users could potentially identify with a reliable accuracy. In the pilot study, as we found that the cold stimulation was significantly easier to identify than the hot stimulation, so we selected the four single-spot cold stimulations. 
+
+Based on the results of Experiment 1 \& 2, we selected those with the accuracy higher than 80\%.
+
+\section{Validating The Combination of Pattern Groups}
+\subsection{(Single+)Neighbor+Opposite}
+XXX
+
+\subsection{Single+Neighbor}
+No significant difference on accuracy. all > 80\%.
+No significant difference on time.
+
+\subsection{Single+Opposite}
+There was significant difference among the patterns' identification accuracy (F(8,88) = 4.58, p < 0.005, $\eta_p^2$ = 0.294). all > 80\% except 0h2c.
+Time: F(8,88) = 6.58, p < 0.005, $\eta_p^2$ = 0.374
+
+\section{Elicitation of Application Scenario}
+To understand whether the designers can design reasonable application scenario using these selected patterns, we conducted a series of design workshops, involving six experienced product/interface designers.
+
+Six categories of application that could potentially benefit from thermal feedback were derived from the literature: Navigation, Call/Message Notification, Emotion Representation, Rendering the properties of artefacts, Gaming, and Calendar. The designer
+
+The designer was instructed to design the application scenario under each category, by using these patterns. The patterns were divided into three groups: single, neighbor, and opposite. Under the same category, the designer can use one category, or the combination of single and neighbor/opposite, but he/she couldn't use the combination of neighbor and opposite, since this combination yielded low accuracy as indicated by our experiment. The designers can reuse the patterns across the application.
+
+\section{Further Discussion}
+\subsection{Set of Reliable Patterns}
+%The Student’s T-test on the post-test questionnaire showed that the opposite pairs were slightly but no significantly less difficult (Mean = 1.9, SD = 0.9) and more comfortable (Mean = 4.9, SD = 1.0) to detect than the neighboring pairs (difficulty: Mean = 2.6, SD = 1.2; comfort: Mean = 4.2, SD = 1.2). By combining the results of both our experiments, we found a set of 10 unique patterns (Fig. \ref{fig:14}) that our participants were able to recognize with an accuracy of at least 80\%: each four individual locations with the cold stimuli (Bc, Lc, Tc, Rc), two patterns from the neighboring Top+Right pair (TcRc, ThRc), and four patterns from the opposite pairs (BcTc, LcRc, LhRc, LcRh).
+Independent t-test on the post-test questionnaire showed that the opposite pairs were slightly but no significantly less difficult (Mean = 1.9, SD = 0.9) and more comfortable (Mean = 4.9, SD = 1.0) to detect than the neighboring pairs (difficulty: Mean = 2.6, SD = 1.2; comfort: Mean = 4.2, SD = 1.2). By combining the results of both our experiments, we found a set of 12 unique patterns (Fig. 14) that our participants were able to recognize with an accuracy of at least 80\%: each four individual locations with the cold stimuli (Bc, Lc, Tc, Rc), three patterns from the neighboring Top+Right pair (TcRc, ThRc, TcRh), and five patterns from the opposite pairs (BhTc, BcTc, LcRc, LhRc, LcRh). The average accuracy of these twelve patterns were 87.5\% (SD = 0.043).
+
+
+\begin{figure}[tp]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.9\columnwidth]{img/fig14.png}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{The set of smart-ring thermal patterns that achieved above 80\% accuracy in the experiments.}
+  \label{fig:14}
+\end{figure}
+
+%Depending on the applications and needs, five more patterns could be included, which generally achieved more than 70\% accuracy: Bh, Th, Rh, and BcTh, TcRh. Note that we did not consider all the possible patterns for neighboring pairs. However, based on our pilot study that there is no significant difference between the accuracy of identifying the left and the right TECs, there might be other candidates with the Top+Left pair.
+Depending on the applications and needs, three more patterns could be included, which generally achieved more than 70\% accuracy: Bh, Th, and Rh. Note that we did not consider all the possible patterns for neighboring pairs. However, based on our pilot study that there is no significant difference between the accuracy of identifying the left and the right TECs, there might be other candidates with the Top+Left pair.
+
+%In general, it appears that a good spatial thermal pattern is more likely to get recognized if the distance between both TEC is maximum (i.e. using opposite pairs). Also, since it is easier to perceive a cold change, patterns with hot temperature change are discouraged.
+In general, it appears that a good spatial thermal pattern is more likely to get recognized if the distance between both TEC is maximum (i.e. using opposite pairs). Also, since it is easier to perceive a cold change, patterns with hot temperature change are discouraged.
+
+\subsection{Cold vs. Hot Change}
+%While a hot temperature change may be convenient to encode a positive emotion \cite{37} or the general proximity to a point (e.g. ``you're getting hot" to indicate that a person is getting closer to an objective) \cite{30}, the cold temperature change should be prioritized for information encoding. In-ring hot temperature change are more difficult to precisely locate, which impairs recognition. This could be further explained by the physiological fact that the density of  cold receptors is higher than warm receptors on the skin \cite{14}.
+While a hot temperature change may be convenient to encode a positive emotion \cite{41} or the general proximity to a point (e.g. ``you're getting hot'' to indicate that a person is getting closer to an objective) \cite{34}, the cold temperature change should be prioritized for information encoding. In-ring hot temperature change is more difficult to precisely locate, which impairs recognition. This could be further explained by the physiological fact that the density of  cold receptors is higher than warm receptors on the skin \cite{15}.
+
+%Additionally, during our experiments, seven participants reported an illusion of weight on the finger skin, feeling more heavily pressed with the hot temperature than with the cold temperature. This observation was contrary to the Weber’s phenomenon \cite{4}, which reveals that a concomitantly cooling stimulus on hand will be perceived as significantly heavier than an identical stimulus of a neutral temperature. This contradiction could be explained by the non-uniformness of thermal perception across different body parts \cite{27}, indicating a need for a deeper investigation on user perception when designing smart ring thermal feedback.
+Additionally, during our experiments, seven participants reported an illusion of weight on the finger skin, feeling more heavily pressed with the hot temperature than with the cold temperature. This observation was contrary to the Weber'��s phenomenon \cite{4}, which reveals that a concomitantly cooling stimulus on hand will be perceived as significantly heavier than an identical stimulus of a neutral temperature. This contradiction could be explained by the non-uniformness of thermal perception across different body parts \cite{31}, indicating a need for a deeper investigation on user perception when designing smart ring thermal feedback.
+
+\subsection{Applications Suggested by the Participants}
+Besides emotion communication, which has been proved as a common application for thermal feedback, our participants suggested several new applications (e.g., directional cueing, notification, artefact comparison, and so on) which could be unique with our ring design. Furthermore, we have developed a set of proof-of-concept applications based on the new applications commonly suggested by the participants.
+
+\subsubsection{Notifications}
+Our set of 10-15 spatial thermal patterns, which can be perceived with the accuracy over 80\%, can be used as thermal icons to encode discrete notifications, similarly to any other modality. Our design leverages the simultaneous sensation of multiple TECs to achieve a rich expressivity that may not be obtainable with only one otherwise. Suggested by 18 participants, these unique spatial thermal patterns could be mapped to notifications from different applications, such as timer alarm, event reminder, incoming calls or messages from different persons or social networks. Previous research \cite{24} showed that users preferred the resistor-based in-ring thermal feedback for non-urgent or moderately urgent information updates. The average response time below 3s in our experiments further suggested the potential of using TEC-based in-ring spatial thermal patterns as the channel of notification. Fig. \ref{fig:15}a shows the in-ring thermal pattern (TcRc) indicating a call from an unknown number.
+
+\subsubsection{Navigation}
+Thirteen participants suggested that the neigboring patterns can be used as the directional cues. The neighboring patterns can encode the four cardinal directions: straight forward, left, right and go-back, using cold temperature change on one specific TEC, and the intermediate points between two consecutive cardinal directions, such as front-left and front-right, using two TEC modules. As revealed by Roumen et al. \cite{24}, our sensitivity to thermal stimuli on finger would increase with physical activity. These suggest a potential usage of the in-ring spatial thermal patterns as directional cues during physical activities (e.g. running and biking). Fig. \ref{fig:15}b shows the neighboring pattern of ThRc suggesting a front-left-left direction for biking.
+
+\subsubsection{Comparison}
+The reliable recognition of opposite thermal patterns supports artifact comparison through the difference of the temperatures on two TECs. Fig. \ref{fig:15}c shows the scenario of a user browsing an online bookstore. By selecting two books, the user toggles the comparison mode. Based on the spatial relation of the selected books (up-down/left-right arrangement), the ring automatically triggers the top-bottom/left-right thermal patterns. The higher temperature the representative TEC has, the more popular the book is. In a more futuristic scenario (Fig. \ref{fig:15}d), the user can compare two physical items, here the ratings of two movie DVDs, through the in-ring thermal patterns. This could be implemented by combining the in-ring TECs and in-ring camera or sensors.
+
+\begin{figure}[tp]
+  \centering
+  %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
+  \includegraphics[width=0.8\columnwidth]{img/fig15.png}
+  %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
+  \caption{Application scenarios for smart-ring thermal patterns: (a) notification, (b) navigation, (c) comparison of digital artifacts, (d) comparison of physical artifacts.}
+  \label{fig:15}
+\end{figure}
+
+\subsection{Limitations}
+%We identified a few limitations and improvement space in our work during the experiments.
+
+%The current smart ring prototype is in a wearable and testable form factor but requires connection to an external control circuit. Our prototype shares the similar limitation of existing thermal research prototypes on being power consuming. For the simultaneous usage of multiple TECs, each requires 1.5W power.
+
+%Some participants reported an issue with direct skin contact with the hard TEC surface. While we allowed the participants to take time to adapt to the ring before starting the actual experiment, the hard surface of the TECs could be challenging for the prolonged use of the ring. Future work may need to consider the choice of thermally conductive soft material (e.g. sponge) to buffer the interface between the finger skin and the TEC surface.
+
+%We observed a difference in the thermal sensitivity among the participants. Medical research has demonstrated that the skin sensitivity could be affected by race, culture, and living region \cite{15}. We observed that all our valid participants were from the similar region and cultural background, thus could have similar skin sensitivity, while the excluded participants have either too high or too low thermal threshold on the finger skin. We argue that our results in this paper would still be valid for other skin sensitivity when the temperature change is adjusted properly.
+
+%Furthermore, our study primarily focused on stimuli based on thermal parameters recommended from previous research \cite{38}: 1 $^{\circ}$C/s for 3s, and the experiments were conducted with the participants sitting still indoor. While these factors ensured a perceivable and comfortable stimulus, there are more thermal parameters that could be adjusted for experimentation. Therefore, in our future studies, we wish to explore other variants of parameters such as the movement of participants, indoor/outdoor environments, rate of temperature change, stimulus duration, starting temperature, sequential temporal stimulation, etc., for smart-ring spatial thermal feedback.
+We identified a few limitations and improvement space in our work during the experiments.
+
+The current smart ring prototype is in a wearable and testable form factor but requires connection to an external control circuit. Our prototype shares the similar limitation of existing thermal research prototypes on being power consuming. For the simultaneous usage of multiple TECs, each requires 1.5W power.
+
+Some participants reported an issue with direct skin contact with the hard TEC surface. While we allowed the participants to take time to adapt to the ring before starting the actual experiment, the hard surface of the TECs could be challenging for the prolonged use of the ring. Future work may need to consider the choice of thermally conductive soft material (e.g. sponge) to buffer the interface between the finger skin and the TEC surface.
+
+We observed a difference in the thermal sensitivity among the participants. Medical research has demonstrated that the skin sensitivity could be affected by race, culture, and living region \cite{17}. We observed that all our participants were from the similar region and cultural background, thus could have similar skin sensitivity. In addition, it is implementable to allow users to customize the temperature change based on their own perception. We argue that our results in this paper would still be valid for other skin sensitivity when the temperature change is adjusted properly.
+
+Furthermore, our study primarily focused on stimuli based on thermal parameters recommended from previous research \cite{42}: 1$^{\circ}$C/s for 3s, and the experiments were conducted with the participants sitting still indoor. While these factors ensured a perceivable and comfortable stimulus, there are more thermal parameters that could be adjusted for experimentation. Therefore, in our future studies, we wish to explore other variants of parameters such as the movement of participants, indoor/outdoor environments, rate of temperature change, stimulus duration, starting temperature, sequential temporal stimulation, etc., for smart-ring spatial thermal feedback.
+
+\section{Conclusion and Future Work}
+%In this paper, we investigated smart ring thermal feedback with multiple TEC modules. In the pilot study, we showed that users could reliably recognize 4 locations with cold stimulation with 95.8\% accuracy, and achieve decent accuracy with hot stimulation (82.3\% accuracy). Further, we designed two types of spatial thermal patterns (neighboring and opposite) that can be achieved with 4 in-ring TECs. Experiments revealed 10 thermal patterns that can be reliably distinguished by participants, indicating their potential usage as in-ring thermal icons for notifications. Participants also elicited different applications, including direction cueing through neighboring patterns and artifact comparison through opposite patterns, demonstrating the interest of spatial thermal patterns in smart rings not only for notifications but also for various everyday activities. For future work, there is a need to investigate the effectiveness of the presented thermal patterns in different applications, such as emotion representation, notification, navigation, and comparison. Furthermore, we see the feasibility of integrating multiple feedback modalities (e.g. vibrotactile, poking, and thermal) in the form factor of a finger ring, and in investigating the interplay of multimodal feedback for smart ring.
+In this paper, we investigated smart ring thermal feedback with multiple TEC modules. In the pilot study, we showed that users could reliably recognize 4 locations with cold stimulation with 95.8\% accuracy, and achieve decent accuracy with hot stimulation (82.3\% accuracy). Further, we designed two types of spatial thermal patterns (neighboring and opposite) that can be achieved with 4 in-ring TECs. Experiments revealed 10 thermal patterns that can be reliably distinguished by participants, indicating their potential usage as in-ring thermal icons for notifications. Participants also elicited different applications, including direction cueing through neighboring patterns and artifact comparison through opposite patterns, demonstrating the interest of spatial thermal patterns in smart rings not only for notifications but also for various everyday activities. For future work, there is a need to investigate the effectiveness of the presented thermal patterns in different applications, such as emotion representation, notification, navigation, and comparison. Furthermore, we see the feasibility of integrating multiple feedback modalities (e.g. vibrotactile, poking, and thermal) in the form factor of a finger ring, and in investigating the interplay of multimodal feedback for smart ring.
+
+
+\section*{Acknowledgement}
+The work described in this paper was partially supported by the General Research Fund (Early Career Scheme) from the Research Grants Council of the Hong Kong Special Administrative Region, China (Project No. CityU 21200216), and the Strategic Research Grant (Project No. 7005021) from City University of Hong Kong.
+%\label{}
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
+
+%% \section{}
+%% \label{}
+
+%% If you have bibdatabase file and want bibtex to generate the
+%% bibitems, please use
+%%
+%%  \bibliographystyle{elsarticle-num}
+%%  \bibliography{<your bibdatabase>}
+
+%% else use the following coding to input the bibitems directly in the
+%% TeX file.
+\section*{References}
+\begin{thebibliography}{00}
+
+%% \bibitem{label}
+%% Text of bibliographic item
+
+\bibitem{1}
+William S. Cain. 1973. Spatial Discrimination of Cutaneous Warmth. The American Journal of Psychology 86, 1: 169. https://doi.org/10.2307/1421858
+\bibitem{2}
+Marta G. Carcedo, Soon Hau Chua, Simon Perrault, Paweł Wozniak, Raj Joshi, Mohammad Obaid, Morten Fjeld, and Shengdong Zhao. 2016. HaptiColor. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems - CHI '��16, 3572-��3583. https://doi.org/10.1145/2858036.2858220
+\bibitem{3}
+Jessica R. Cauchard, Janette L. Cheng, Thomas Pietrzak, and James A. Landay. 2016. ActiVibe: Design and Evaluation of Vibrations for Progress Monitoring. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems - CHI '��16, 3261-3271. https://doi.org/10.1145/2858036.2858046
+\bibitem{4}
+James S. Dunn, David A. Mahns, and Saad S. Nagi. 2017. Why does a cooled object feel heavier? Psychophysical investigations into the Weber'��s Phenomenon. BMC Neuroscience 18, 4. https://doi.org/10.1186/s12868-016-0322-3
+\bibitem{5}
+Yuan-Ling Feng, Charith Lasantha Fernando, Jan Rod, and Kouta Minamizawa. 2017. Submerged haptics. In ACM SIGGRAPH 2017 Emerging Technologies on - SIGGRAPH '17, 1-��2. https://doi.org/10.1145/3084822.3084835
+\bibitem{6}
+Barry G. Green. 1977. Localization of thermal sensation: An illusion and synthetic heat. Perception \& Psychophysics 22, 4: 331-��337. https://doi.org/10.3758/BF03199698
+\bibitem{7}
+Martin Halvey, Michael Henderson, Stephen A. Brewster, Graham Wilson, and Stephen A. Hughes. 2012. Augmenting Media with Thermal Stimulation. . Springer, Berlin, Heidelberg, 91-��100. https://doi.org/10.1007/978-3-642-32796-4\_10
+\bibitem{8}
+Martin Halvey, Graham Wilson, Stephen A. Brewster, and Stephen A. Hughes. 2012. Baby it's cold outside: the influence of ambient temperature and humidity on thermal feedback. Proceedings of the SIGCHI conference on Human factors in computing systems - CHI '12: 715-��724. https://doi.org/10.1145/2207676.2207779
+\bibitem{9}
+Martin Halvey, Graham Wilson, Stephen A. Brewster, and Stephen A. Hughes. 2013. Perception of thermal stimuli for continuous interaction. In CHI '��13 Extended Abstracts on Human Factors in Computing Systems on - CHI EA '13, 1587. https://doi.org/10.1145/2468356.2468640
+\bibitem{10}
+Martin Halvey, Graham Wilson, Yolanda Vazquez-Alvarez, Stephen A. Brewster, and Stephen A. Hughes. 2011. The effect of clothing on thermal feedback perception. In Proceedings of the 13th international conference on multimodal interfaces - ICMI '��11, 217. https://doi.org/10.1145/2070481.2070519
+\bibitem{11}
+Teng Han, Qian Han, Michelle Annett, Fraser Anderson, Da-Yuan Huang, \& Xing-Dong Yang. 2017, October. Frictio: Passive Kinesthetic Force Feedback for Smart Ring Output. In Proceedings of the 30th Annual ACM Symposium on User Interface Software and Technology (pp. 131-142). ACM.
+%TengHan, QianHan, MichelleAnnett, FraserAnderson, Da-YuanHuang, andXing-DongYang. 2017. Frictio: Passive Kinesthetic Force Feedback for Smart Ring Output. In Proceedings of UIST 2017. Retrieved September11, 2017 from http://hci.cs.umanitoba.ca/Publications/details/frictio-passive-kinesthetic-force-feedback-for-smart-ring-output
+\bibitem{12}
+Meng-Ju Hsieh, Rong-Hao Liang, and Bing-Yu Chen. 2016. NailTactors. In Proceedings of the 18th International Conference on Human-Computer Interaction with Mobile Devices and Services - MobileHCI '16, 29-��34. https://doi.org/10.1145/2935334.2935358
+\bibitem{13}
+Seungwoo Je, Brendan Rooney, Liwei Chan, and Andrea Bianchi. 2017. tactoRing. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI'��17, 3106-��3114. https://doi.org/10.1145/3025453.3025703
+\bibitem{14}
+Lynette A. Jones and Michal Berris. 2002. The psychophysics of temperature perception and thermal-interface design. In Proceedings - 10th Symposium on Haptic Interfaces for Virtual Environment and Teleoperator Systems, HAPTICS 2002, 137-��142. https://doi.org/10.1109/HAPTIC.2002.998951
+\bibitem{15}
+Lynette A. Jones and Hsin Ni Ho. 2008. Warm or cool, large or small? The challenge of thermal displays. IEEE Transactions on Haptics 1, 1: 53-��70. https://doi.org/10.1109/TOH.2008.2
+\bibitem{16}
+Josepth C. Stevens and Kenneth K. Choo. 1996. Spatial Acuity of the Body Surface over the Life Span. Somatosensory \& Motor Research 13, 2: 153-��166. https://doi.org/10.3109/08990229609051403
+\bibitem{17}
+Kenneth W. Miller, Abigail M. Wippel, Enzo Berardesca, Laurent Misery, and Howard Maibach. 2013. Sensitive Skin in the United States: Survey of Regional Differences. Family Medicine \& Medical Science Research 2, 3. https://doi.org/10.4172/2327-4972.1000112
+\bibitem{18}
+Lael U. Odhner and Haruhiko Harry Asada. 2006. Sensorless temperature estimation and control of shape memory alloy actuators using thermoelectric devices. IEEE/ASME Transactions on Mechatronics 11, 2: 139-��144. https://doi.org/10.1109/TMECH.2006.871088
+\bibitem{19}
+Roshan Lalintha Peiris, Liwei Chan, and Kouta Minamizawa. 2016. Thermocons: Evaluating the Thermal Haptic Perception of the Forehead. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology - UIST '��16 Adjunct, 187-��188. https://doi.org/10.1145/2984751.2984762
+\bibitem{20}
+Roshan Lalintha Peiris, Wei Peng, Zikun Chen, Liwei Chan, and Kouta Minamizawa. 2017. ThermoVR. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI '��17, 5452-��5456. https://doi.org/10.1145/3025453.3025824
+\bibitem{21}
+Doros Polydorou, Kening Zhu, and Alexis Karkotis. 2017. Digital Humanities and Techno-Animism in Wearables: A Case-Study-Based Collaborative Design Framework for Digitally-Ensouled Jewellery. . Springer, Cham, 719-��736. https://doi.org/10.1007/978-3-319-58637-3\_55
+\bibitem{22}
+Gilang Andi Pradana, Adrian David Cheok, Masahiko Inami, Jordan Tewell, and Yongsoon Choi. 2014. Emotional priming of mobile text messages with ring-shaped wearable device using color lighting and tactile expressions. In Proceedings of the 5th Augmented Human International Conference, 14.
+\bibitem{23}
+Nimesha Ranasinghe, Pravar Jain, Shienny Karwita, David Tolley, and Ellen Yi-Luen Do. 2017. Ambiotherm. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI '��17, 1731-��1742. https://doi.org/10.1145/3025453.3025723
+\bibitem{24}
+Thijs Roumen, Simon T. Perrault, and Shengdong Zhao. 2015. NotiRing: A Comparative Study of Notification Channels for Wearable Interactive Rings. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems - CHI '��15, 2497-��2500. https://doi.org/10.1145/2702123.2702350
+\bibitem{25}
+Bahador Saket, Chrisnawan Prasojo, Yongfeng Huang, and Shengdong Zhao. 2013. Designing an effective vibration-based notification interface for mobile phones. In Proceedings of the 2013 conference on Computer supported cooperative work - CSCW '��13, 149. https://doi.org/10.1145/2441776.2441946
+\bibitem{26}
+Katsunari Sato and Takashi Maeno. 2012. Presentation of Sudden Temperature Change Using Spatially Divided Warm and Cool Stimuli. . Springer, Berlin, Heidelberg, 457-��468. https://doi.org/10.1007/978-3-642-31401-8\_41
+\bibitem{27}
+Anshul Singhal and Lynette Jones. 2016. Space-Time Dependencies and Thermal Perception. . Springer, Cham, 291-��302. https://doi.org/10.1007/978-3-319-42321-0\_27
+\bibitem{28}
+Joseph C. Stevens. 1982. Temperature can sharpen tactile acuity. Perception \& Psychophysics 31, 6: 577-��580. https://doi.org/10.3758/BF03204192
+\bibitem{29}
+Joseph C. Stevens. 1989. Temperature and the Two-Point Threshold. Somatosensory \& Motor Research 6, 3: 275-��284. https://doi.org/10.3109/08990228909144677
+\bibitem{30}
+Joseph C. Stevens, Lawrence E. Marks, and Donald C. Simonson. 1974. Regional sensitivity and spatial summation in the warmth sense. Physiology \& Behavior 13, 6: 825-��836. https://doi.org/10.1016/0031-9384(74)90269-8
+\bibitem{31}
+Josepth C. Stevens and Kenneth K. Choo. 1998. Temperature sensitivity of the body surface over the life span. Somatosensory \& Motor Research 15, 1: 13-��28. https://doi.org/10.1080/08990229870925
+\bibitem{32}
+Murakami Takaki, Person Tanner, Fernando Charith, and Minamizawa Kouta. 2017. Altered Touch�: Miniature Haptic Display with Force , Thermal and Tactile Feedback for Augmented Haptics. In SIGGRAPH 2017, 1-��2. https://doi.org/10.1145/3084822.3084836
+\bibitem{33}
+Richard H. Taus, Joseph C. Stevens, and Lawrence E. Marks. 1975. Spatial localization of warmth. Perception \& Psychophysics 17, 2: 194-��196. https://doi.org/10.3758/BF03203885
+\bibitem{34}
+Jordan Tewell, Jon Bird, and George R. Buchanan. 2017. Heat-Nav: Using Temperature Changes as Navigational Cues. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI '��17: 1131-��1135. https://doi.org/10.1145/3025453.3025965
+\bibitem{35}
+Jordan Tewell, Jon Bird, and George R. Buchanan. 2017. The Heat is On. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI '��17: 1756-��1767. https://doi.org/10.1145/3025453.3025844
+\bibitem{36}
+Reto Wettach, Christian Behrens, Adam Danielsson, and Thomas Ness. 2007. A thermal information display for mobile applications. In Proceedings of the 9th international conference on Human computer interaction with mobile devices and services - MobileHCI '��07, 182-��185. https://doi.org/10.1145/1377999.1378004
+\bibitem{37}
+Graham Wilson and Stephen A. Brewster. 2017. Multi-Moji: Combining Thermal, Vibrotactile \& Visual Stimuli to Expand the Affective Range of Feedback. In CHI '��17 Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, 1742-��1755. https://doi.org/10.1145/3025453.3025614
+\bibitem{38}
+Graham Wilson, Stephen A. Brewster, Martin Halvey, and Stephen A. Hughes. 2012. Thermal Icons: Evaluating Structured Thermal Feedback for Mobile Interaction. Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services - MobileHCI'��12: 309-��312. https://doi.org/10.1145/2371574.2371621
+\bibitem{39}
+Graham Wilson, Stephen Brewster, Martin Halvey, and Stephen Hughes. 2013. Thermal Feedback Identification in a Mobile Environment. . Springer, Berlin, Heidelberg, 10-��19. https://doi.org/10.1007/978-3-642-41068-0\_2
+\bibitem{40}
+Graham Wilson, Gavin Davidson, and Stephen A. Brewster. 2015. In the Heat of the Moment. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems - CHI '��15, 2063-��2072. https://doi.org/10.1145/2702123.2702219
+\bibitem{41}
+Graham Wilson, Dobromir Dobrev, and Stephen A. Brewster. 2016. Hot Under the Collar. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems - CHI '��16, 4838-��4849. https://doi.org/10.1145/2858036.2858205
+\bibitem{42}
+Graham Wilson, Martin Halvey, Stephen A. Brewster, and Stephen A. Hughes. 2011. Some Like it Hot: Thermal Feedback for Mobile Devices. In Proceedings of the SIGCHI conference on Human Factors in Computing Systems - CHI '��11, 2555-��2564. https://doi.org/10.1145/1978942.1979316
+\bibitem{43}
+G.-H. Yang, D.-S. Kwon, and L. A.Jones. 2009. Spatial acuity and summation on the hand: The role of thermal cues in material discrimination. Perception \& Psychophysics 71, 1: 156-��163. https://doi.org/10.3758/APP.71.1.156
+\bibitem{44}
+Vibol Yem, Ryuta Okazaki, and Hiroyuki Kajimoto. 2016. FinGAR. In ACM SIGGRAPH 2016 Emerging Technologies on - SIGGRAPH '��16, 1-��2. https://doi.org/10.1145/2929464.2929474
+\bibitem{45}
+Hui Zhang, Edward Arens, Charlie Huizenga, and Taeyoung Han. 2010. Thermal sensation and comfort models for non-uniform and transient environments: Part I: Local sensation of individual body parts. Building and Environment 45, 2: 380-��388. https://doi.org/10.1016/j.buildenv.2009.06.018
+
+
+
+%\bibitem{1}
+%William S. Cain. 1973. Spatial Discrimination of Cutaneous Warmth. The American Journal of Psychology 86, 1: 169.
+%
+%\bibitem{2}
+%Marta G. Carcedo, Soon Hau Chua, Simon Perrault, Paweł Wozniak, Raj Joshi, Mohammad Obaid, Morten Fjeld, and Shengdong Zhao. 2016. HaptiColor. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems - CHI '16, 3572–3583.
+%
+%\bibitem{3}
+%Jessica R. Cauchard, Janette L. Cheng, Thomas Pietrzak, and James A. Landay. 2016. ActiVibe: Design and Evaluation of Vibrations for Progress Monitoring. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems - CHI '16, 3261–3271.
+%
+%\bibitem{4}
+%James S. Dunn, David A. Mahns, and Saad S. Nagi. 2017. Why does a cooled object feel heavier? Psychophysical investigations into the Weber’s Phenomenon. BMC Neuroscience 18, 4.
+%
+%\bibitem{5}
+%Yuan-Ling Feng, Charith Lasantha Fernando, Jan Rod, and Kouta Minamizawa. 2017. Submerged haptics. In ACM SIGGRAPH 2017 Emerging Technologies on - SIGGRAPH '17, 1–2.
+%
+%\bibitem{6}
+%Martin Halvey, Michael Henderson, Stephen A. Brewster, Graham Wilson, and Stephen A. Hughes. 2012. Augmenting Media with Thermal Stimulation. . Springer, Berlin, Heidelberg, 91–100.
+%
+%\bibitem{7}
+%Martin Halvey, Graham Wilson, Stephen A. Brewster, and Stephen A. Hughes. 2012. Baby it’s cold outside: the influence of ambient temperature and humidity on thermal feedback. Proceedings of the SIGCHI conference on Human factors in computing systems - CHI '12: 715–724.
+%
+%\bibitem{8}
+%Martin Halvey, Graham Wilson, Stephen A. Brewster, and Stephen A. Hughes. 2013. Perception of thermal stimuli for continuous interaction. In CHI '13 Extended Abstracts on Human Factors in Computing Systems on - CHI EA '13, 1587.
+%
+%\bibitem{9}
+%Martin Halvey, Graham Wilson, Yolanda Vazquez-Alvarez, Stephen A. Brewster, and Stephen A. Hughes. 2011. The effect of clothing on thermal feedback perception. In Proceedings of the 13th international conference on multimodal interfaces - ICMI '11, 217.
+%
+%\bibitem{10}
+%Teng Han, Qian Han, Michelle Annett, Fraser Anderson, Da-Yuan Huang, and Xing-Dong Yang. 2017. Frictio: Passive Kinesthetic Force Feedback for Smart Ring Output. In Proceedings of UIST 2017.
+%
+%\bibitem{11}
+%Meng-Ju Hsieh, Rong-Hao Liang, and Bing-Yu Chen. 2016. NailTactors. In Proceedings of the 18th International Conference on Human-Computer Interaction with Mobile Devices and Services - MobileHCI '16, 29–34.
+%
+%\bibitem{12}
+%Seungwoo Je, Brendan Rooney, Liwei Chan, and Andrea Bianchi. 2017. tactoRing. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI '17, 3106–3114.
+%
+%\bibitem{13}
+%Lynette A. Jones and Michal Berris. 2002. The psychophysics of temperature perception and thermal-interface design. In Proceedings - 10th Symposium on Haptic Interfaces for Virtual Environment and Teleoperator Systems, HAPTICS 2002, 137–142.
+%
+%\bibitem{14}
+%Lynette A. Jones and Hsin Ni Ho. 2008. Warm or cool, large or small? The challenge of thermal displays. IEEE Transactions on Haptics 1, 1: 53–70.
+%
+%\bibitem{15}
+%Kenneth W. Miller, Abigail M. Wippel, Enzo Berardesca, Laurent Misery, and Howard Maibach. 2013. Sensitive Skin in the United States: Survey of Regional Differences. Family Medicine \& Medical Science Research 2, 3.
+%
+%\bibitem{16}
+%Lael U. Odhner and Haruhiko Harry Asada. 2006. Sensorless temperature estimation and control of shape memory alloy actuators using thermoelectric devices. IEEE/ASME Transactions on Mechatronics 11, 2: 139–144.
+%
+%\bibitem{17}
+%Roshan Lalintha Peiris, Liwei Chan, and Kouta Minamizawa. 2016. Thermocons: Evaluating the Thermal Haptic Perception of the Forehead. In Proceedings of the 29th Annual Symposium on User Interface Software and Technology - UIST '16 Adjunct, 187–188.
+%
+%\bibitem{18}
+%Roshan Lalintha Peiris, Wei Peng, Zikun Chen, Liwei Chan, and Kouta Minamizawa. 2017. ThermoVR. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI '17, 5452–5456.
+%
+%\bibitem{19}
+%Doros Polydorou, Kening Zhu, and Alexis Karkotis. 2017. Digital Humanities and Techno-Animism in Wearables: A Case-Study-Based Collaborative Design Framework for Digitally-Ensouled Jewellery. Springer, Cham, 719–736.
+%
+%\bibitem{20}
+%Gilang Andi Pradana, Adrian David Cheok, Masahiko Inami, Jordan Tewell, and Yongsoon Choi. 2014. Emotional priming of mobile text messages with ring-shaped wearable device using color lighting and tactile expressions. In Proceedings of the 5th Augmented Human International Conference, 14.
+%
+%\bibitem{21}Nimesha Ranasinghe, Pravar Jain, Shienny Karwita, David Tolley, and Ellen Yi-Luen Do. 2017. Ambiotherm. In Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI '17, 1731–1742.
+%
+%\bibitem{22}
+%Thijs Roumen, Simon T. Perrault, and Shengdong Zhao. 2015. NotiRing: A Comparative Study of Notification Channels for Wearable Interactive Rings. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems - CHI '15, 2497–2500.
+%
+%\bibitem{23}
+%Bahador Saket, Chrisnawan Prasojo, Yongfeng Huang, and Shengdong Zhao. 2013. Designing an effective vibration-based notification interface for mobile phones. In Proceedings of the 2013 conference on Computer supported cooperative work - CSCW '13, 149.
+%
+%\bibitem{24}
+%Katsunari Sato and Takashi Maeno. 2012. Presentation of Sudden Temperature Change Using Spatially Divided Warm and Cool Stimuli. . Springer, Berlin, Heidelberg, 457–468.
+%
+%\bibitem{25}
+%Anshul Singhal and Lynette Jones. 2016. Space-Time Dependencies and Thermal Perception. . Springer, Cham, 291–302.
+%
+%\bibitem{255}
+%Josepth C. Stevens. 1989. Temperature and the two-point threshold. Somatosensory \& motor research, 6, 3: 275-284.
+%
+%\bibitem{26}
+%Josepth C. Stevens and Kenneth K. Choo. 1996. Spatial Acuity of the Body Surface over the Life Span. Somatosensory \& Motor Research 13, 2: 153–166.
+%
+%\bibitem{27}
+%Josepth C. Stevens and Kenneth K. Choo. 1998. Temperature sensitivity of the body surface over the life span. Somatosensory \& Motor Research 15, 1: 13–28.
+%
+%\bibitem{28}
+%Murakami Takaki, Person Tanner, Fernando Charith, and Minamizawa Kouta. 2017. Altered Touch : Miniature Haptic Display with Force , Thermal and Tactile Feedback for Augmented Haptics. In SIGGRAPH 2017, 1–2.
+%
+%\bibitem{29}
+%Richard H. Taus, Joseph C. Stevens, and Lawrence E. Marks. 1975. Spatial localization of warmth. Perception \& Psychophysics 17, 2: 194–196.
+%
+%\bibitem{30}
+%Jordan Tewell, Jon Bird, and George R. Buchanan. 2017. Heat-Nav: Using Temperature Changes as Navigational Cues. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI '17: 1131–1135.
+%
+%\bibitem{31}
+%Jordan Tewell, Jon Bird, and George R. Buchanan. 2017. The Heat is On. Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems - CHI '17: 1756–1767.
+%
+%\bibitem{32}
+%Reto Wettach, Christian Behrens, Adam Danielsson, and Thomas Ness. 2007. A thermal information display for mobile applications. In Proceedings of the 9th international conference on Human computer interaction with mobile devices and services - MobileHCI '07, 182–185.
+%
+%\bibitem{33}
+%Graham Wilson and Stephen A. Brewster. 2017. Multi-Moji: Combining Thermal, Vibrotactile \& Visual Stimuli to Expand the Affective Range of Feedback. In CHI '17 Proceedings of the 2017 CHI Conference on Human Factors in Computing Systems, 1742–1755.
+%
+%\bibitem{34}
+%Graham Wilson, Stephen A. Brewster, Martin Halvey, and Stephen A. Hughes. 2012. Thermal Icons: Evaluating Structured Thermal Feedback for Mobile Interaction. Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services - MobileHCI’12: 309–312.
+%
+%\bibitem{35}
+%Graham Wilson, Stephen Brewster, Martin Halvey, and Stephen Hughes. 2013. Thermal Feedback Identification in a Mobile Environment. . Springer, Berlin, Heidelberg, 10–19.
+%
+%\bibitem{36}
+%Graham Wilson, Gavin Davidson, and Stephen A. Brewster. 2015. In the Heat of the Moment. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems - CHI '15, 2063–2072.
+%
+%\bibitem{37}
+%Graham Wilson, Dobromir Dobrev, and Stephen A. Brewster. 2016. Hot Under the Collar. In Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems - CHI '16, 4838–4849.
+%
+%\bibitem{38}
+%Graham Wilson, Martin Halvey, Stephen A. Brewster, and Stephen A. Hughes. 2011. Some Like it Hot: Thermal Feedback for Mobile Devices. In Proceedings of the SIGCHI conference on Human Factors in Computing Systems - CHI '11, 2555–2564.
+%
+%\bibitem{39}
+%Vibol Yem, Ryuta Okazaki, and Hiroyuki Kajimoto. 2016. FinGAR. In ACM SIGGRAPH 2016 Emerging Technologies on - SIGGRAPH '16, 1–2.
+%
+%\bibitem{40}
+%Hui Zhang, Edward Arens, Charlie Huizenga, and Taeyoung Han. 2010. Thermal sensation and comfort models for non-uniform and transient environments: Part I: Local sensation of individual body parts. Building and Environment 45, 2: 380–388.
+
+
+
+%\bibitem{Stevens1996}
+%Josepth C. Stevens and Kenneth K. Choo. 1996. Spatial Acuity of the Body Surface over the Life Span. \textit{Somatosensory \& Motor Research}. 13, 2: 153–166.
+
+%\bibitem{Cauchard2016}
+%Jessica R. Cauchard, Janette L. Cheng, Thomas Pietrzak, and James A. Landay. 2016. ActiVibe: Design and Evaluation of Vibrations for Progress Monitoring. In \textit{Proceedings of the 2016 CHI Conference on Human Factors in Computing Systems - CHI ’16}, 3261–3271.
+
+
+
+\end{thebibliography}
+
+\end{document}
+
+\endinput
+%%
+%% End of file `elsarticle-template-num.tex'.
