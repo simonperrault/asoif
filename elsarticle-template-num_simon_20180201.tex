@@ -91,7 +91,7 @@
 \address[nus2]{Yale-NUS College, Singapore}
 \address[kmd]{Keio University Graduate School of Media Design, Keio University, Japan}
 \cortext[cor1]{Corresponding author}
-\author{Kening Zhu, Taizhou Chen, Shaoyu Cai, Simon Perrault, Roshan Lalintha Peiris}
+%\author{Kening Zhu, Taizhou Chen, Shaoyu Cai, Simon Perrault, Roshan Lalintha Peiris}
 
 %\address{}
 
@@ -154,13 +154,14 @@ The contribution of this paper is four-fold:
 %The contribution of this paper is three-fold:
 \begin{itemize}
 \item Working prototypes of smart rings embedded with multiple TECs, of various sizes, which can be used with the thermal patterns described in the paper.
-\item Empirical study on user perception of spatial thermal patterns on the finger using a smart ring.
+\item The results of our empirical studies on user perception of spatial thermal patterns on the finger using a smart ring.
 \item A set of thermal patterns that leverage the finger's natural sensitivity to temperature to allow reliable recognition of single and combinational patterns from the smart ring;
 \item A set of user-elicited application scenarios that leverages the proposed set of in-ring thermal patterns.%and to support smart ring applications for notifications, directional cueing, artifact comparison, etc.
 \end{itemize}
 
-\section{Related Works}
+\section{Related Work}
 Our research is inspired by two emerging topics in HCI: thermal feedback, and multimodal haptic feedback on fingers.
+We also discuss finger sensitivity to thermal stimuli.
 
 \subsection{Thermal Feedback in HCI}
 There have been extensive physiological \cite{1,31,33}, psychological \cite{14,27,45}, and HCI-related \cite{8,9,10,15,26,36,37,38,39,40,41} research on thermal feedback, from which various applications have been proposed.
@@ -197,6 +198,21 @@ While visual, auditory, vibrotactile, poking, and skin-dragging feedbacks have b
 %As a type of digital jewelry, smart rings benefit from the same social acceptability and emotional bond as traditional jewelry \cite{19}. Pradana et al. \cite{20} developed RingU, supporting remote communication through visual and  vibrotactile feedback in the ring. Roumen et al. \cite{22} compared five types of in-ring notifications: visual, audio, vibrotactile, poke, and thermal. Their results showed that vibrotactile feedback was the most reliable and fastest channel for notification, while thermal channel, which was implemented using resistors, was the slowest. This specific limitation was caused by the hardware, as their system needed more than 7 seconds of warming versus 1 second for a TEC. Despite this limitation, they found consistent and accurate thermal perception by some participants, and suggested interesting scenarios in which thermal feedback could be desirable, such as a notification channel for moderately urgent messages. Je et al. \cite{12} developed tactoRing, a ring-size tactile display that provides haptic feedback by dragging a small gear tactor on the skin around the finger, achieving an accuracy of 94\%. More recently, Han et al. \cite{10} designed Frictio, providing in-ring friction-based force feedback, with requirement of input from the non-wearing hand.
 
 %While visual, auditory, vibrotactile, poking, and skin-dragging feedbacks have been investigated in the context of a finger ring with optimal technical implementation, the existing attempts for in-ring thermal feedback were based on resistor heat generation, which is slow and unidirectional. There is a lack of research on how TEC-based bidirectional thermal feedback can be integrated and elaborated in a finger ring setting. In this paper, we present a prototype of a finger ring with multiple TECs that can achieve different levels of thermal feedback around the finger.
+
+\subsection{Thermal Sensitivity on the Fingers}
+While the finger, more specifically finger tips, is the most sensitive to vibrotactile stimulation, it is not the case for thermal stimulation.
+This can be explained by the fact that heat is perceived by different cells compared to vibrotactile or force stimulation.
+
+Stevens \& Choo~\cite{31} investigated thermal sensitivity on different body parts, including fingers, palm, forearm, toe, lips.
+They showed that people are usually more sensitive to cold stimuli, and that thermal sensitivity declines with age.
+Another important finding is that thermal sensitivity greatly varies across people, which explains why some of our younger participants experienced pain during our experiments.
+Thermal sensitivity, excluding on over-sensitive areas such as lips, was proven to be relatively consistent on the rest of the body, including across hairy and glabrous skin~\cite{31}.
+
+However, a latest work from Machado et al.~\cite{Machado2008}, showed differences in terms of sweat secretions between the palmar and dorsal surfaces of the hand.
+While the general correlation between sweat and heat sensitivity is not clear, the drop of accuracy observed on the bottom (palmar) location in our studies for hot temperature seem to corroborate these results.
+
+
+
 
 \section{Hardware Design}
 %In the prototype of the thermal ring, we used a 5×5 mm TEC element (Model No.: TEC1-00701) attached to a 6×6 mm heat sink, as shown in Fig. \ref{fig:2}. The rings were 3D printed with PLA. As shown in Fig. \ref{fig:3}, each ring contained 6 or 8 6x6 mm square holes, for easy installment and removal of the TEC modules. Once the TEC modules were installed in the ring, the ring was further tightened with a rubber band, ensuring the TEC modules attached firmly to the skin.
@@ -312,7 +328,7 @@ The direction of temperature change also placed a significant effect on the accu
   %\subfigure\cite{]{\label{fig:fold1}\includegraphics[width=0.45\textwidth]{images/study_setup.png}}
   \includegraphics[width=0.4\columnwidth]{img/fig7.pdf}
   %\subfigure\cite{]{\label{fig:fold2}\includegraphics[width=0.45\textwidth]{images/wo_assembly.png}}
-  \caption{Accuracy of Individual Element Identificantion for the 4-TEC setting. Blue: cold stimulation, Red: hot stimulation.}
+  \caption{Accuracy of Individual Element Identification for the 4-TEC setting. Blue: cold stimulation, Red: hot stimulation.}
   \label{fig:7}
 \end{figure}
 
