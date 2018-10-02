@@ -225,14 +225,17 @@ The rationale is that a watch offers a larger interaction surface and better out
 A smartband can easily provide rich vibrotactile feedback, with up to four or five motors distributed around the wrist~\cite{2}.
 
 On the other hand, rings tend to be overlooked, with interesting concepts that were not fully explored~\cite{Ringteraction,PairRing,OctaRing}.
-We envision smart rings as an extension of a smartphone, which could be used either for input~\cite{Ringteraction,PairRing} or output~\cite{24}.
+Smart rings can be used an extension of a smartphone, providing convenient input~\cite{Ringteraction,PairRing} or output~\cite{24} when the phone is not available for interaction.
+Most of the output work~\cite{14,16,24} investigate other haptic modalities, but did not provide clear design guidelines on how to create patterns and map them with existing notifications.
 The finger is one of the most sensitive body part when it comes to vibrotactile stimulation~\cite{Gibson}.
-However, spatial acuity is not good enough~\cite{Gibson} to embed more than one vibration motor on a ring, which we confirmed with a short pilot study.
-Further testing with our small TECs suggested that thermal feedback could in that sense show an advantage over vibrotactile feedback on a ring form factor, which satisfies our second criterion.
+However, spatial acuity is not good enough~\cite{Gibson} to embed more than one vibration motor on a ring, which we confirmed with some internal informal testing during our initial design process.
+Further testing with our small TECs suggested that thermal feedback could show an advantage over vibrotactile feedback on a ring form factor, which satisfies our second criterion.
 
-
-
-
+Additionally, Roumen et al.~\cite{24} suggested a few applications for thermal feedback, and highlighted its interest with increased sensitivity when performing physical activity.
+The kind of notifications suggested is "non-urgent" notifications (e.g. calendar event, low battery, app update).
+As we already highlighted, this previous work did not use optimal hardware for thermal feedback, with a very slow resistor-based process, which likely impacted their results.\
+With this work, we thus want to further explore notifications using thermal feedback.
+We also envision smart rings with multiple sensors embedded in it, which could include other modalities, which could pair nicely with multiple TECs as presented in this paper.
 
 \section{Hardware Design}
 %In the prototype of the thermal ring, we used a 5×5 mm TEC element (Model No.: TEC1-00701) attached to a 6×6 mm heat sink, as shown in Fig. \ref{fig:2}. The rings were 3D printed with PLA. As shown in Fig. \ref{fig:3}, each ring contained 6 or 8 6x6 mm square holes, for easy installment and removal of the TEC modules. Once the TEC modules were installed in the ring, the ring was further tightened with a rubber band, ensuring the TEC modules attached firmly to the skin.
@@ -698,7 +701,7 @@ Yuan-Ling Feng, Charith Lasantha Fernando, Jan Rod, and Kouta Minamizawa. 2017. 
 \bibitem{Ringteraction}
 Sarthak Ghosh, Hyeong Cheol Kim, Yang Cao, Arne Wessels, Simon T. Perrault, and Shengdong Zhao. 2016. Ringteraction: Coordinated Thumb-index Interaction Using a Ring. In Proceedings of the 2016 CHI Conference Extended Abstracts on Human Factors in Computing Systems (CHI EA '16). ACM, New York, NY, USA, 2640-2647. DOI: https://doi.org/10.1145/2851581.2892371
 \bibitem{Gibson}
-Gibson, G.O., Craig, J. C. Tactile spatial sensitivity and anisotropy. In Perception & Psychophysics, vol. 67-6 (2005), 1061-1079.
+Gibson, G.O., Craig, J. C. Tactile spatial sensitivity and anisotropy. In Perception \& Psychophysics, vol. 67-6 (2005), 1061-1079.
 \bibitem{6}
 Barry G. Green. 1977. Localization of thermal sensation: An illusion and synthetic heat. Perception \& Psychophysics 22, 4: 331-337. https://doi.org/10.3758/BF03199698
 \bibitem{7}
