@@ -406,7 +406,7 @@ In order to design our patterns, we considered the following dimensions:
 \begin{itemize}
 \item Temperature Direction \{ Hot, Cold \}
 \item Location \{ Top, Right, Left, Bottom \}
-\item Grouping Strategy \{ Neighbors, Opposite \} (for patterns involving two ECs)
+\item Grouping Strategy \{ Neighbors, Opposite \} (for patterns involving two TECs)
 \item Temperature Change \{1 degree/sec\} (controlled)
 \item Temporality \{Simultaneous\} (for patterns involving two TECs, controlled)
 \end{itemize}
@@ -415,7 +415,7 @@ We did not consider more complex spatiotemporal patterns, based on recommendatio
 
 Carcedo et al.~\cite{1} investigated the Temporality dimension and advocated to use a sequential temporality (i.e. sensors are not activated simultaneously), but initial testing with TECs did not show any drop of accuracy, allowing us to shorten the patterns by setting the Temporality to simultaneous.
 
-The grouping strategies are tested in two different experiment, as to minimize to keep the number of varying dimensions close to MacLean's~\cite{MacLean2008} recommendations, and, as results will show, to maximize recognizability.
+The grouping strategies were tested in two different experiments, as to minimize to keep the number of varying dimensions close to MacLean's~\cite{MacLean2008} recommendations, and, as results will show, to maximize recognizability.
 
 In order to investigate the mapping between patterns and commands, we ran a design workshop. MacLean~\cite{MacLean2008} presented guidelines for haptic icons. While we use different dimensions, we aim to design a set that can be easily mapped, at hopefully a low cognitive cost.
 The use of a spatial dimension allows us to create representational icons. For example, leveraging the similarities between cardinal points and our 4 TECs layout allows us to create a simple pattern set for navigation (e.g. activating the Left TECs for Left turn/West, or both Top/Left for North-West). Temperature can also be mapped with emotions~\cite{35,37}, providing another option for simple mapping: a hot stimulus could be used to encode a positive meaning, or the priority of an event.
