@@ -212,6 +212,25 @@ However, a latest work from Machado et al.~\cite{Machado2008}, showed difference
 While the general correlation between sweat and heat sensitivity is not clear, the drop of accuracy observed on the bottom (palmar) location in our studies for hot temperature seem to corroborate these results.
 
 \section{Motivation}
+In this project, we decided to investigate thermal feedback for wearable devices.
+We chose the form factor based on two criteria:
+\begin{enumerate}
+  \item Choose a body location on which a small and discreet wearable device can be affixed. Said location should have advantages in terms of interaction.
+  \item Choose a body location on which thermal feedback can achieve higher spatial acuity compared to other haptic modalities.
+\end{enumerate}
+From the first criterion, we narrowed down our choices with two locations: wrist (watch form factor) and finger (ring form factor).
+
+HCI research on wearable devices originally focused more on smartwatches, with little research done on smart ring up to the recent years.
+The rationale is that a watch offers a larger interaction surface and better output capabilities.
+A smartband can easily provide rich vibrotactile feedback, with up to four or five motors distributed around the wrist~\cite{2}.
+
+On the other hand, rings tend to be overlooked, with interesting concepts that were not fully explored~\cite{Ringteraction,PairRing,OctaRing}.
+We envision smart rings as an extension of a smartphone, which could be used either for input~\cite{Ringteraction,PairRing} or output~\cite{24}.
+The finger is one of the most sensitive body part when it comes to vibrotactile stimulation~\cite{Gibson}.
+However, spatial acuity is not good enough~\cite{Gibson} to embed more than one vibration motor on a ring, which we confirmed with a short pilot study.
+Further testing with our small TECs suggested that thermal feedback could in that sense show an advantage over vibrotactile feedback on a ring form factor, which satisfies our second criterion.
+
+
 
 
 
@@ -678,6 +697,8 @@ James S. Dunn, David A. Mahns, and Saad S. Nagi. 2017. Why does a cooled object 
 Yuan-Ling Feng, Charith Lasantha Fernando, Jan Rod, and Kouta Minamizawa. 2017. Submerged haptics. In ACM SIGGRAPH 2017 Emerging Technologies on - SIGGRAPH '17, 1-2. https://doi.org/10.1145/3084822.3084835
 \bibitem{Ringteraction}
 Sarthak Ghosh, Hyeong Cheol Kim, Yang Cao, Arne Wessels, Simon T. Perrault, and Shengdong Zhao. 2016. Ringteraction: Coordinated Thumb-index Interaction Using a Ring. In Proceedings of the 2016 CHI Conference Extended Abstracts on Human Factors in Computing Systems (CHI EA '16). ACM, New York, NY, USA, 2640-2647. DOI: https://doi.org/10.1145/2851581.2892371
+\bibitem{Gibson}
+Gibson, G.O., Craig, J. C. Tactile spatial sensitivity and anisotropy. In Perception & Psychophysics, vol. 67-6 (2005), 1061-1079.
 \bibitem{6}
 Barry G. Green. 1977. Localization of thermal sensation: An illusion and synthetic heat. Perception \& Psychophysics 22, 4: 331-337. https://doi.org/10.3758/BF03199698
 \bibitem{7}
