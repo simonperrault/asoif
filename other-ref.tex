@@ -78,3 +78,26 @@ MacLean, K. E. 2008. Foundations of Transparency in Tactile Information Design. 
 MacLean, K. E. and Enriquez, M.. 2003. Perceptual design of haptic icons. In Proceedings of EuroHaptics, pp. 351-363, Dublin, Ireland, Eurohaptics Society 2003.
 
 
+In line with previous literature on spatiotemporal vibrotactile patterns~\cite{Alvina2015,Yatani2009}, our goal is to design a set of patterns that can be easily recognized and convey information quickly. To ensure better recognizability, we decided to use many dimensions with reduced set of values for each instead of fewer dimensions with larger set of values, in order to leverage chunking~\cite{Miller1956}.
+A secondary goal is to potentially simple mappings between patterns and applications/commands.
+
+The set of available dimension for vibrotactile pattern includes frequency, amplitude, waveform, duration, rhythm and spatial location~\cite{Brown2005,Chan2008,MacLean2008}. Alvina et al.~\cite{Alvina2015} show that precisely locating a vibrotactile sensation may be problematic and propose a simple binary dimension instead of spatial location which is whether two consecutive pulses happen on the same motor.
+MacLean \& Enriques investigated similar dimensions for force feedback.
+Thermal feedback is a bit more limited, due to its different nature: a TEC will still remain either hot or cold after being turned off, and that kind of latency makes it hard to work with \textbf{rhythm} or \textbf{waveform}.
+Similarly, \textbf{amplitude}, which can be seen as the temperature change rate may induce pain, we thus chose a single value for it.
+
+In order to design our patterns, we considered the following dimensions:
+\begin{itemize}
+\item Temperature Direction \{ Hot, Cold \}
+\item Location \{ Top, Right, Left, Bottom \}
+\item Grouping Strategy \{ Neighbors, Opposite \} (for patterns involving two ECs)
+\item Temperature Change \{1 degree/sec\} (controlled)
+\item Temporality \{Simultaneous\} (for patterns involving two TECs, controlled)
+\end{itemize}
+
+We did not consider more complex spatiotemporal patterns, based on recommendations from Gallace et al.~\cite{Gallace2007} who suggested that participants may recognize simple shapes such as lines (by activating two actuators similar to two points), but only experts may detect more complex shapes. This also allows us to keep the patterns short duration-wise.
+
+
+The grouping strategies are tested in two different experiment. MacLean's~\cite{MacLean2008}
+For our design space
+We decided to keep duration to a minimum
