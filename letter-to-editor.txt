@@ -2,12 +2,25 @@ Dear Editor and Reviewers,
 
 Please find the new version of our submission "A Sense of Ice and Fire: Exploring Thermal Feedback with Multiple Thermoelectric-cooling Elements on a Smart Ring".
 
-Following your instructions, we implemented the following changes:
-- [TODO: Ken] Reran stats analysis as requested by R1
-- [TODO: Ken] Other major changes here
-- We added a subsection to Related Work about thermal sensitivity on fingers, which also shows differences between vibrotactile and thermal perception ("need for discussion on perceptual acuity" -R1)
-- We included a Motivation section after Related Work, which explains our rationale about the form factor and the choice of the finger location for our work.
-- We added references which showed huge variance in thermal sensitivity and potential pain thresholds between individuals as an explanation for why we did discard some participants
-- We found a reference suggesting that the dorsal area of the hand/finger produces more sweat than the palmar area, which may explain why the accuracy for hot stimuli on the bottom TEC was lower than the rest (see Section 5.7)
-- We reworked the Pattern Generation section, added the references suggested by the Editor, plus some relevant literature on Spatiotemporal Vibrotactile Pattern generation, and discussed them to justify our pattern generation rationale (Section 6) [addressed AE's point on Situating the Research in the Literature]
-- We ran a design workshop to create mappings between patterns and applications/commands (Section 10)
+We would like to thank the reviewers and editor for their thoughtful comments. We acknowledged some of the limitations of our original set of experiments, as well as weaknesses in the analysis.
+Following the reviews we received, we reran the statistical analysis on the pilot experiment and updated the text to reflect the changes.
+
+We refocused the main studies on investigating either opposite or neighboring patterns instead of mixing them all. To do so, we designed and ran two new experiments (sections Experiment 1 & 2). We incorporated  each possible combination and only excluded combinations with Bottom Hot stimulation because of its low accuracy.
+
+We also ran three follow-up experiments (Follow up 1, 2 & 3) in order to evaluate recognition when combining multiple groups of patterns (single spot, opposite, neighboring).
+
+We thus derived a group of 12 patterns achieving a satisfying accuracf of 80% or more, and ran a design workshop to create mapping between these patterns and specific applications.
+
+In addition to these new experiments and major changes, we improved the overall motivation of the paper and better situated it in the existing literature.
+
+First, we added a subsection to Related Work about thermal sensitivity on fingers, which also shows differences between vibrotactile and thermal perception ("need for discussion on perceptual acuity" -R1).
+
+Second, we included a Motivation section after Related Work, which explains our rationale about the form factor and the choice of the finger location for our work.
+
+We also added references which showed huge variance in thermal sensitivity and potential pain thresholds between individuals as an explanation for why we did discard some participants.
+
+We found a reference suggesting that the dorsal area of the hand/finger produces more sweat than the palmar area, which may explain why the accuracy for hot stimuli on the bottom TEC was lower than the rest (see Section 5.7)
+
+We reworked the Pattern Generation section, added the references suggested by the Editor, plus some relevant literature on Spatiotemporal Vibrotactile Pattern generation, and discussed them to justify our pattern generation rationale (Section 6) [addressed AE's point on Situating the Research in the Literature].
+
+Finally, we updated the rest of the paper to reflect these changes and fixed the typos and did minor rephrasing.
