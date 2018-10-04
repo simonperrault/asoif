@@ -1,0 +1,13 @@
+Dear Editor and Reviewers,
+
+Please find the new version of our submission "A Sense of Ice and Fire: Exploring Thermal Feedback with Multiple Thermoelectric-cooling Elements on a Smart Ring".
+
+Following your instructions, we implemented the following changes:
+- [TODO: Ken] Reran stats analysis as requested by R1
+- [TODO: Ken] Other major changes here
+- We added a subsection to Related Work about thermal sensitivity on fingers, which also shows differences between vibrotactile and thermal perception ("need for discussion on perceptual acuity" -R1)
+- We included a Motivation section after Related Work, which explains our rationale about the form factor and the choice of the finger location for our work.
+- We added references which showed huge variance in thermal sensitivity and potential pain thresholds between individuals as an explanation for why we did discard some participants
+- We found a reference suggesting that the dorsal area of the hand/finger produces more sweat than the palmar area, which may explain why the accuracy for hot stimuli on the bottom TEC was lower than the rest (see Section 5.7)
+- We reworked the Pattern Generation section, added the references suggested by the Editor, plus some relevant literature on Spatiotemporal Vibrotactile Pattern generation, and discussed them to justify our pattern generation rationale (Section 6) [addressed AE's point on Situating the Research in the Literature]
+- We ran a design workshop to create mappings between patterns and applications/commands (Section 10)
