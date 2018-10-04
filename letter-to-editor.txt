@@ -9,7 +9,9 @@ We refocused the main studies on investigating either opposite or neighboring pa
 
 We also ran three follow-up experiments (Follow up 1, 2 & 3) in order to evaluate recognition when combining multiple groups of patterns (single spot, opposite, neighboring).
 
-We thus derived a group of 12 patterns achieving a satisfying accuracf of 80% or more, and ran a design workshop to create mapping between these patterns and specific applications.
+We thus derived a group of 12 patterns achieving a satisfying accuracy of 80% or more, and ran a design workshop to create mapping between these patterns and specific applications. During the workshop, we made sure that designers only used either opposite or neighbor patterns, as our follow up studies showed that accuracy would drop if both were used at the same time.
+
+We discussed the current limitations of our prototypes, including the electric consumption.
 
 In addition to these new experiments and major changes, we improved the overall motivation of the paper and better situated it in the existing literature.
 
