@@ -3,13 +3,14 @@ Dear Editor and Reviewers,
 Please find the new version of our submission "A Sense of Ice and Fire: Exploring Thermal Feedback with Multiple Thermoelectric-cooling Elements on a Smart Ring".
 
 We would like to thank the reviewers and editor for their thoughtful comments. We acknowledged some of the limitations of our original set of experiments, as well as weaknesses in the analysis.
-Following the reviews we received, we reran the statistical analysis on the pilot experiment and updated the text to reflect the changes.
 
-We refocused the main studies on investigating either opposite or neighboring patterns instead of mixing them all. To do so, we designed and ran two new experiments (sections Experiment 1 & 2). We incorporated  each possible combination and only excluded combinations with Bottom Hot stimulation because of its low accuracy.
+Following the reviews we received, we re-ran the statistical analysis with repeated measures ANOVA on the pilot experiment and updated the text to reflect the changes.
 
-We also ran three follow-up experiments (Follow up 1, 2 & 3) in order to evaluate recognition when combining multiple groups of patterns (single spot, opposite, neighboring).
+We refocused the main studies on investigating either opposite or neighboring patterns instead of mixing them with single-spot stimulations. To do so, we designed and ran two new experiments (sections Experiment 1 & 2). We incorporated each possible combination and only excluded combinations with Bottom Hot stimulation because of its low accuracy revealed in the pilot study.
 
-We thus derived a group of 12 patterns achieving a satisfying accuracy of 80% or more, and ran a design workshop to create mapping between these patterns and specific applications. During the workshop, we made sure that designers only used either opposite or neighbor patterns, as our follow up studies showed that accuracy would drop if both were used at the same time.
+We also ran three follow-up experiments (Follow-up 1, 2 & 3) in order to evaluate in-ring thermal pattern recognition when combining multiple groups of patterns (single spot+opposite, and single spot+neighboring).
+
+We thus derived patterns achieving a satisfying accuracy of 80% or more, and ran a series of design workshops to create mapping between these patterns and specific applications. During the workshops, we made sure that designers only used either opposite or neighbor patterns, as our follow-up studies showed that accuracy would drop if both were mixed in the same group.
 
 We discussed the current limitations of our prototypes, including the electric consumption.
 
