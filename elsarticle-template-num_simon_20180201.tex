@@ -342,7 +342,7 @@ In both the 4-TEC and 6-TEC settings, participants performed significantly faste
 \subsection{Discussion}
 A significant observation of the pilot study is that participants found it easier to precisely locate a cold stimulation compared to a hot one. This result is in line with previous research on other body locations \cite{10}. Additionally, response time was around 1.2 s faster for cold sensation compared to hot. A direct application of these results point to using a cold temperature change to convey information where correct location perception is crucial, for example, in a navigation scenario where each TEC encodes a direction.
 
-In terms of ring design, our results suggest that participants are able to discriminate up to four locations on the smart ring with good average accuracy (89.9\%). One-way ANOVA on the post-study questionnaire showed a significant effect of the number of TECs on the perceived difficulty of stimulation identification ($F_{2, 16} = 33.13$, $p < 0.005$, $\eta_p^2 = 0.702$).
+In terms of ring design, our results suggest that participants are able to discriminate up to four locations on the smart ring with good average accuracy (89.9\%). Repeat Measures ANOVA on the post-study questionnaire showed a significant effect of the number of TECs on the perceived difficulty of stimulation identification ($F_{2, 16} = 33.13$, $p < 0.005$, $\eta_p^2 = 0.702$).
 The post-hoc Tuckey HSD test suggested that the perceived difficulty of stimulation identification for the 4-TEC setting (M = 2.4, SD = 1.4) and the 6-TEC setting (M = 3.2, SD = 1.0) were significantly lower than those the 8-TEC setting (M = 4.8, SD = 1.3, all $p<0.05$). There was no significant difference between the perceived difficulty of the 4-TEC setting and the 6-TEC setting. In addition, the perceived comfort of the 4-TEC setting (M = 5.5, SD = 1.1) was slightly but not significantly higher than those of the 6-TEC setting (M = 5.3, SD = 1.1) and the 8-TEC setting (M = 4.9, SD = 1.2, all $p>0.05$).
 By focusing on each individual actuator on the ring, we also found that it was less accurate to perceive a stimulus on the bottom actuator.
 Previous work~\cite{31} suggests that thermal sensitivity does not greatly vary across most body parts, excluding the most sensitive ones (head).
@@ -447,7 +447,7 @@ Fig.~\ref{fig:11} shows the descriptive result of the average identification acc
 \end{figure}
 
 \subsection{Summary}
-We noted that 3 out of 12 neighboring patterns had over 80\% accuracy: TcRc, BcRc, and TcLc. Additionally, BcLc achieved 75\% accuracy. All these patterns combined two cold stimulations. This set of patterns confirms that participants had trouble precisely locating hot sensations in the neighboring patterns, either combining two neighboring hot TECs or mixing one hot TEC and one neighboring cold TEC. This could be explained with the previous research which revealed that the spatial summation of thermal sensation placed less effect for cold stimulation than hot stimulation~\cite{43}.
+We noted that 3 neighboring patterns had over 80\% accuracy: TcRc, BcRc, and TcLc. Additionally, BcLc achieved 75\% accuracy. All these patterns combined two cold stimulations. This set of patterns confirms that participants had trouble precisely locating hot sensations in the neighboring patterns, either combining two neighboring hot TECs or mixing one hot TEC and one neighboring cold TEC. This could be explained with the previous research which revealed that the spatial summation of thermal sensation placed less effect for cold stimulation than hot stimulation~\cite{43}.
 
 \section{Experiment 2: Temperature Changes on Opposite TECs}
 We believe that our proposed ring design can also be used to compare different quantities, such as the ratings of two shops, which could be encoded using different temperatures for the opposite pair of TECs. We conducted another experiment similar to Experiment 1, which considered opposite TECs instead.
@@ -539,10 +539,46 @@ There were two design sessions in each workshop. The designers created their own
 
 \subsection{Workshop Results}
 In total, there were 340 mappings created for 14 thermal patterns and 6 application categories. Considering the three groups of thermal patterns, Pearson Chi-Square Test (${\chi}^2(10, N=340) = 61.78$, $p < 0.001$, Cramer's V = 0.301) revealed that there was a significant relationship between the application category and the usage of the thermal patterns by the designers in the workshop.
+<<<<<<< HEAD
 
 More specifically, the largest group of mappings (26.6\%) for the single-spot stimulations were to the scenario of navigation. 69\% of the mappings for the neighboring patterns were about the application of navigation. For example, the designers tended to assign Tc, Lc, Rc, and Bc for discrete direction, such as forward, left, right, and backward. The neighboring patterns were mapped to the collateral directions, such front-left and front-right. While it is trivial to design the mappings with TcLc to front-left and TcRc to front-right, we observed eight mappings with TcRc to front-left and BcRc to front-right. The designers explained that this type of mappings was specifically for driving when users, with the ring worn on their left hands, are grabbing the steering wheel, and their hands are perpendicular to the horizontal ground, so that the right position becomes the top position, with the top becoming left and the bottom becoming right.
+=======
+\\
+\paragraph{Navigation}
+More specifically, the largest group of mappings (26.6\%) for the single-spot stimulations were to the scenario of navigation.
+69\% of the mappings for the neighboring patterns were about the application of navigation.
+All of our participants mapped Patterns 1 (Tc), 2 (Rc) and 4 (Lc) with their respective directions. Four out of six participants also mapped Pattern 3 (Bc) with a South/Go backward direction, while the two other mapped them with respectively Pattern 7 (BcTh) and Pattern 6 (RcLc), with the rationale that going backwards, e.g. making a u-turn needs a stronger warning or less expected pattern compared to the other three directions.
+The neighboring patterns (10--12) were also mapped to collateral directions, such front-left and front-right.
+These simple mapping while seemingly trivial are also extremely easy to learn as they do represent direction in a clear way.
+Another interesting result we found that two designers mapped Pattern 11 (TcRc) to Front-Left and Pattern 12 (BcRc) to Front-Right.
+The designers explained that this type of mappings was specifically for driving when users, with the ring worn on their left hands, are grabbing the steering wheel, and their hands are perpendicular to the horizontal ground, so that the right position becomes the top position, with the top becoming left and the bottom becoming right.
+This suggests that actually knowing the orientation of the finger would allow us to dynamically change the patterns for specific directions in order to maintain a spatial consistency of directions.
+Finally, four participants also used pattern with hot stimulation to notify the user of an emergency, such as an obstacle, tunnel, red traffic light or unexpected traffic.
+>>>>>>> 955628dc2e258a87b9354d90b197eab957c9cb56
 
-The opposite patterns were evenly used across different applications. While being used for presenting artifact properties, all designers agreed that the opposite patterns can be used to compare two different artifacts. For example, when two restaurants, one on the left and the other on the right, are selected for comparison, the side with a higher temperature indicates a higher rating, and the colder side indicates a lower rating. For notifying incoming calls/messages, the designers tended to assign the calls/messages from strangers or possible risks to the patterns with the hot stimulation (i.e. ThBc, LhRc, and LcRh), with the association of the hot stimulation with the warning.
+\paragraph{Incoming Messages and Calls}
+Our designers vastly (5/6) preferred single-spot patterns to encode four different categories of contacts (mainly friends, family, work, other).
+Similarly to navigation, patterns involving hot stimulation (7--9) were used by four designers as a warning of either an unknown contact calling/messaging, harassing call or an urgent call.
+The contrast with the otherwise cold stimulation was thus expected to catch the attention, as well as consistently mapping hot stimulation with emergency or warning.
+
+
+\paragraph{Emotion and Mood}
+We asked our participants to select patterns and map emotion with them.
+Interestingly they tended to do so by mapping the position of each TEC to feelings.
+For example, positive emotions such as good mood/joy were associated with Pattern 1 (Tc) by four participants.
+Similarly, feelings of sadness or angryness were mapped with Pattern 3 (Bc): P3 reported \textit{The bottom position means ``I am feeling down''}.
+Other patterns involving the bottom position were also suggested, such as Pattern 12 (BcRc), chosen by two participants for sadness, as well as Pattern 7 (BcTh) suggested for anger by one participant.
+Pattern 7 was also used by one participant to notify users that their interlocutor should not be disturbed.
+Finally, patterns with hot stimulation were used to convey negative emotions: Pattern 7 and 9 were chosen to express anger (two participants) or sadness (two participants).
+
+\paragraph{Properties of Artefacts}
+While being used for presenting artifact properties, all designers agreed that the opposite patterns can be used to compare two different artifacts.
+For example, when two restaurants, one on the left and the other on the right, are selected for comparison, the side with a higher temperature indicates a higher rating, and the colder side indicates a lower rating.
+Patterns 7, 8 and 9 (hot stimulation) were once again suggested for warning, either on the weather for rainstorm or typhoon (two participants).
+Compared to pairwise comparisons, where hot encoded a better rating, two participants suggested to use one of Pattern 7, 8 or 9 for negative properties measured, creating an interesting contrasts with suggestions on comparisons between two places/objects.
+
+
+The opposite patterns were evenly used across different applications.
 
 While the single-spot patterns being used for notifying incoming calls/messages, the designers tended to map different categories of contacts to different positions. For example, the cold stimulation at the top position was mapped to the family members, with the design rationale that it is easier and more comfortable to perceive the cold stimulation triggered by the top TEC.
 
